@@ -9,7 +9,7 @@ const Contact = () => {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            padding: '4rem 1rem',
+            padding: '1rem 1rem',
             animation: 'fadeIn 0.5s ease'
         }}>
 

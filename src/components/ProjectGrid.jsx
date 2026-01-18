@@ -18,9 +18,8 @@ const ProjectGrid = ({ onProjectClick }) => {
                     <h2 style={{
                         fontSize: '2rem',
                         marginBottom: '2rem',
-                        color: 'var(--text-primary)',
-                        borderLeft: '4px solid var(--accent-color)',
-                        paddingLeft: '1rem'
+                        color: 'var(--accent-color)',
+                        textAlign: 'center'
                     }}>
                         {category}
                     </h2>

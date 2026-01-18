@@ -6,7 +6,7 @@ export const projects = [
     category: "Stages & Expérience",
     role: "Stagiaire Data Analyst",
     date: "Mars 2025 - Avril 2025",
-    description: "Conception d’un tableau de bord interactif Power BI basé sur des données issues de capteurs (température, humidité, niveau d’eau, nutriments) et d’actionneurs automatisés.",
+    description: "Conception d'un tableau de bord interactif Power BI basé sur des données issues de capteurs (température, humidité, niveau d'eau, nutriments) et d'actionneurs automatisés.",
     images: [
       "Dasheboard page.png",
       "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2670&auto=format&fit=crop",
@@ -14,9 +14,10 @@ export const projects = [
       "/ME.png"
     ],
     tags: ["Power BI", "DAX", "IoT", "Data Visualization"],
-    details: "Création de 4 pages dynamiques avec KPI, graphiques temporels (jour, mois, heure), et analyses croisées. Analyse des corrélations entre arrosage automatique et évolution des nutriments (azote, phosphore, potassium). Utilisation de DAX pour le calcul d’indicateurs personnalisés (somme, moyenne, max) et modélisation logique.",
+    details: "Création de 4 pages dynamiques avec KPI, graphiques temporels (jour, mois, heure), et analyses croisées. Analyse des corrélations entre arrosage automatique et évolution des nutriments (azote, phosphore, potassium). Utilisation de DAX pour le calcul d'indicateurs personnalisés (somme, moyenne, max) et modélisation logique.",
     link: "#"
   },
+
 
   // Competitions
   {
@@ -25,7 +26,7 @@ export const projects = [
     category: "Compétitions & Hackathons",
     role: "Chef de Projet / Développeur",
     date: "2024",
-    description: "Conception d’un robot suiveur de ligne télécommandé et autonome pour une compétition 1 vs 1. Remporté le 1er prix à l'ENSET Mohammedia.",
+    description: "Conception d'un robot suiveur de ligne télécommandé et autonome pour une compétition 1 vs 1. Remporté le 1er prix à l'ENSET Mohammedia.",
     images: [
       "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=2670&auto=format&fit=crop",
       "/photos-for.png",
@@ -41,7 +42,7 @@ export const projects = [
     category: "Compétitions & Hackathons",
     role: "Développeur",
     date: "2024",
-    description: "Développement d’un robot suiveur de ligne intelligent avec détection et évitement automatique des obstacles. 1er Prix au Hackathon EHTP Casablanca.",
+    description: "Développement d'un robot suiveur de ligne intelligent avec détection et évitement automatique des obstacles. 1er Prix au Hackathon EHTP Casablanca.",
     images: [
       "/photos-for.png",
       "/photos-for.png",
@@ -57,7 +58,7 @@ export const projects = [
     category: "Compétitions & Hackathons",
     role: "Concepteur",
     date: "2023",
-    description: "Conception d’un robot suiveur de ligne et télécommandé. Pilotage réussi sur un parcours complexe et technique en deux phases.",
+    description: "Conception d'un robot suiveur de ligne et télécommandé. Pilotage réussi sur un parcours complexe et technique en deux phases.",
     images: [
       "https://images.unsplash.com/photo-1555255707-c07966088b7b?q=80&w=2532&auto=format&fit=crop",
       "/photos-for.png",
@@ -74,13 +75,14 @@ export const projects = [
     title: "Analyse des Ventes Adidas",
     category: "Projets Académiques",
     date: "Mars 2025",
-    description: "Création d’un tableau de bord interactif Power BI pour analyser les ventes Adidas aux États-Unis.",
+    description: "Création d'un tableau de bord interactif Power BI pour analyser les ventes Adidas aux États-Unis.",
     images: [
+      "https://cdn.dribbble.com/userupload/16087289/file/original-90ebfdb35d7fee7098ef34f683d81742.png?resize=752x&vertical=center",
       "/photos-for.png",
       "/ME.png"
     ],
     tags: ["Power BI", "DAX", "SQL", "Analysis"],
-    details: "KPIs clés : Total des ventes, bénéfices, marge bénéficiaire. Visualisations : Carte géographique, treemap, graphiques dynamiques. Optimisation des décisions grâce à l’analyse des produits et des régions.",
+    details: "KPIs clés : Total des ventes, bénéfices, marge bénéficiaire. Visualisations : Carte géographique, treemap, graphiques dynamiques. Optimisation des décisions grâce à l'analyse des produits et des régions.",
     link: "#"
   },
   {
@@ -90,21 +92,74 @@ export const projects = [
     date: "Février 2024",
     description: "Conception et gestion de la base de données du CMC (Centre Métiers et Compétences).",
     images: [
-      "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?q=80&w=2121&auto=format&fit=crop",
+      "https://cdn.dribbble.com/userupload/24610389/file/original-02a2558166a262dee58063844864ffaf.png?resize=752x&vertical=center",
       "/photos-for.png",
       "/ME.png"
     ],
     tags: ["MySQL", "SQL Workbench", "Database Design"],
     details: "Développement de requêtes SQL (CRUD). Définition des structures de tables, attributs et types de données pour un stockage optimisé.",
     link: "#"
-  }
+  },
+  {
+    id: 7,
+    title: "IoT Dashboard & Analytics",
+    category: "Stages & Expérience",
+    role: "Stagiaire Data Analyst",
+    date: "Mars 2025 - Avril 2025",
+    description: "Conception d'un tableau de bord interactif Power BI basé sur des données issues de capteurs (température, humidité, niveau d'eau, nutriments) et d'actionneurs automatisés.",
+    images: [
+      "/1080x680.png",
+      "/1.png",
+      "/Dasheboard page.png",
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2670&auto=format&fit=crop",
+      "/photos-for.png",
+      "/ME.png"
+    ],
+    tags: ["Power BI", "DAX", "IoT", "Data Visualization"],
+    details: "Création de 4 pages dynamiques avec KPI, graphiques temporels (jour, mois, heure), et analyses croisées. Analyse des corrélations entre arrosage automatique et évolution des nutriments (azote, phosphore, potassium). Utilisation de DAX pour le calcul d'indicateurs personnalisés (somme, moyenne, max) et modélisation logique.",
+    link: "#"
+  },
+ {
+    id: 8,
+    title: "IoT Dashboard & Analytics",
+    category: "Stages & Expérience",
+    role: "Stagiaire Data Analyst",
+    date: "Mars 2025 - Avril 2025",
+    description: "Conception d'un tableau de bord interactif Power BI basé sur des données issues de capteurs (température, humidité, niveau d'eau, nutriments) et d'actionneurs automatisés.",
+    images: [
+      "/1.png",
+      "/1080x680.png",
+      "/Dasheboard page.png",
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2670&auto=format&fit=crop",
+      "/photos-for.png",
+      "/ME.png"
+    ],
+    tags: ["Power BI", "DAX", "IoT", "Data Visualization"],
+    details: "Création de 4 pages dynamiques avec KPI, graphiques temporels (jour, mois, heure), et analyses croisées. Analyse des corrélations entre arrosage automatique et évolution des nutriments (azote, phosphore, potassium). Utilisation de DAX pour le calcul d'indicateurs personnalisés (somme, moyenne, max) et modélisation logique.",
+    link: "#"
+  },
+  {
+    id: 9,
+    title: "Analyse des Ventes Adidas",
+    category: "Projets Académiques",
+    date: "Mars 2025",
+    description: "Création d'un tableau de bord interactif Power BI pour analyser les ventes Adidas aux États-Unis.",
+    images: [
+      "https://cdn.dribbble.com/userupload/4148708/file/original-73c4feb50c20b41ee7dea951b39cb601.webp?resize=752x&vertical=center",
+      "/photos-for.png",
+      "/ME.png"
+    ],
+    tags: ["Power BI", "DAX", "SQL", "Analysis"],
+    details: "KPIs clés : Total des ventes, bénéfices, marge bénéficiaire. Visualisations : Carte géographique, treemap, graphiques dynamiques. Optimisation des décisions grâce à l'analyse des produits et des régions.",
+    link: "#"
+  },
 ];
 
 export const personalInfo = {
   name: "FADOUL Hatim",
   role: "Intelligence Artificielle (IA) & Data Analysis | Power BI • Python • SQL",
   profileImage: "/photos-for.png", // Correct path for file in public folder
-  bio: "Diplômé en analyse de données et intelligence artificielle du CMC Rabat. Curieux, motivé et déterminé, je souhaite mettre à profit mes compétences techniques pour contribuer à des projets innovants.",
+  bio: "Data Analyst & AI enthusiast, specialized in data analysis, Power BI dashboards, and database management. Hands-on experience in IoT data analytics, robotics competitions, and real-world AI projects. Curious, proactive, and driven to turn complex data into clear, actionable insights.",
   quote: "Curieux, motivé et déterminé",
   contact: {
     email: "fadoulhatim@gmail.com",
@@ -116,11 +171,11 @@ export const personalInfo = {
   },
   skills: [
     "Python (Pandas, NumPy, Scikit-learn)",
-    "Power BI & DAX",
-    "SQL (MySQL)",
-    "R",
-    "Robotique & Arduino",
-    "Design & Montage Vidéo"
+    "SQL", "R","Power BI","DAX",
+    "Tableau", "MySQL", "PostgreSQL",
+    "MongoDB", "Robotique",
+    "Arduino", "Graphic Design",
+    "Video Editing", "PLCnext Engineer"
   ],
   education: [
     {

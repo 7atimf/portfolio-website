@@ -17,9 +17,9 @@ const Navbar = () => {
       borderBottom: '1px solid rgba(255,255,255,0.05)'
     }}>
       <div style={{
-        maxWidth: '1000px',
+        maxWidth: '1150px',
         margin: '0 auto',
-        padding: '1rem 2rem',
+        padding: '1rem 1rem',
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center'
@@ -29,7 +29,7 @@ const Navbar = () => {
         </Link>
         <div style={{ display: 'flex', gap: '2rem' }}>
           <Link to="/" style={linkStyle}>Home</Link>
-          <Link to="/contact" style={linkStyle}>Contact Me</Link>
+          <Link to="/contact" style={linkStyle}>Contact</Link>
         </div>
       </div>
     </nav>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { personalInfo } from '../data/projects';
 import { FaGithub, FaLinkedin, FaEnvelope, FaInstagram } from 'react-icons/fa';
 
@@ -46,7 +47,7 @@ const Hero = () => {
                         {personalInfo.role}
                     </h2>
                     <p style={{
-                        fontSize: '1.2rem',
+                        fontSize: '1.05rem',
                         color: 'var(--text-secondary)',
                         marginBottom: '2.5rem',
                         lineHeight: '1.8',
@@ -55,7 +56,11 @@ const Hero = () => {
                         {personalInfo.bio}
                     </p>
 
-                    <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center' }}>
+                    <Link to="/contact" style={contactButtonStyle}>
+                        Contact Me
+                    </Link>
+
+                    <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center', marginTop: '2rem' }}>
                         <a href={personalInfo.contact.github} style={iconBtnStyle} title="GitHub" target="_blank" rel="noopener noreferrer">
                             <FaGithub size={28} />
                         </a>
@@ -103,6 +108,21 @@ const iconBtnStyle = {
     alignItems: 'center',
     justifyContent: 'center',
     cursor: 'pointer'
+};
+
+const contactButtonStyle = {
+    display: 'inline-block',
+    padding: '0.7rem 2.5rem',
+    fontSize: '1.1rem',
+    fontWeight: '600',
+    color: '#fff',
+    background: 'var(--accent-color)',
+    border: 'none',
+    borderRadius: '10px',
+    cursor: 'pointer',
+    transition: 'all 0.3s ease',
+    textDecoration: 'none',
+    boxShadow: '0 4px 15px var(--accent-glow)'
 };
 
 // Add hover effect via cleaner logical CSS in real project, but using style object for now requires JS
