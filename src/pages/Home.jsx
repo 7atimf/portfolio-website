@@ -1,5 +1,6 @@
 import React from 'react';
 import Hero from '../components/Hero';
+import AboutMe from '../components/AboutMe';
 import ProjectGrid from '../components/ProjectGrid';
 import EducationSkills from '../components/EducationSkills';
 
@@ -16,6 +17,8 @@ const Home = ({ onProjectClick }) => {
             <Hero />
             <div style={dividerStyle}></div>
             <ProjectGrid onProjectClick={onProjectClick} />
+            {/* <div style={dividerStyle}></div>
+            <AboutMe /> */}
             <div style={dividerStyle}></div>
             <EducationSkills />
         </div>

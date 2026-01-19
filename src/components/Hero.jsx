@@ -70,7 +70,12 @@ const Hero = () => {
                         <a href={personalInfo.contact.instagram} style={iconBtnStyle} title="Instagram" target="_blank" rel="noopener noreferrer">
                             <FaInstagram size={28} />
                         </a>
-                        <a href={`mailto:${personalInfo.contact.email}`} style={iconBtnStyle} title="Email">
+                        <a
+                            onClick={(e) => { e.preventDefault(); window.location.href = `mailto:${personalInfo.contact.email}`; }}
+                            href={`mailto:${personalInfo.contact.email}`}
+                            style={iconBtnStyle}
+                            title="Email"
+                        >
                             <FaEnvelope size={28} />
                         </a>
                     </div>

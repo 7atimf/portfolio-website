@@ -24,8 +24,14 @@ const Navbar = () => {
         justifyContent: 'space-between',
         alignItems: 'center'
       }}>
-        <Link to="/" style={{ display: 'flex', alignItems: 'center' }}>
+        <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none' }}>
           <img src="/7tm.svg" alt="Logo" style={{ height: '27px', objectFit: 'contain' }} />
+          <span style={{
+            fontSize: '1.5rem',
+            fontWeight: 'bold',
+            color: 'var(--accent-color)',
+            letterSpacing: '1px'
+          }}></span>
         </Link>
         <div style={{ display: 'flex', gap: '2rem' }}>
           <Link to="/" style={linkStyle}>Home</Link>

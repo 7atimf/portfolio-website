@@ -74,6 +74,7 @@ export const projects = [
     id: 5,
     title: "Analyse des Ventes Adidas",
     category: "Projets Académiques",
+    role: "Data Analyst",
     date: "Mars 2025",
     description: "Création d'un tableau de bord interactif Power BI pour analyser les ventes Adidas aux États-Unis.",
     images: [
@@ -89,6 +90,7 @@ export const projects = [
     id: 6,
     title: "Gestion Base de Données CMC",
     category: "Projets Académiques",
+    role: "Data Analyst",
     date: "Février 2024",
     description: "Conception et gestion de la base de données du CMC (Centre Métiers et Compétences).",
     images: [
@@ -119,11 +121,31 @@ export const projects = [
     details: "Création de 4 pages dynamiques avec KPI, graphiques temporels (jour, mois, heure), et analyses croisées. Analyse des corrélations entre arrosage automatique et évolution des nutriments (azote, phosphore, potassium). Utilisation de DAX pour le calcul d'indicateurs personnalisés (somme, moyenne, max) et modélisation logique.",
     link: "#"
   },
- {
+      {
     id: 8,
-    title: "IoT Dashboard & Analytics",
+    title: "Robotics Club Trainer",
     category: "Stages & Expérience",
-    role: "Stagiaire Data Analyst",
+    role: "CMC Rabat",
+    date: "Mars 2025 - Avril 2025",
+    description: "Conception d'un tableau de bord interactif Power BI basé sur des données issues de capteurs (température, humidité, niveau d'eau, nutriments) et d'actionneurs automatisés.",
+    images: [
+      "/23.png",
+      "/1.png",
+      "/1080x680.png",
+      "/Dasheboard page.png",
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2670&auto=format&fit=crop",
+      "/photos-for.png",
+      "/ME.png"
+    ],
+    tags: ["Power BI", "DAX", "IoT", "Data Visualization"],
+    details: "Création de 4 pages dynamiques avec KPI, graphiques temporels (jour, mois, heure), et analyses croisées. Analyse des corrélations entre arrosage automatique et évolution des nutriments (azote, phosphore, potassium). Utilisation de DAX pour le calcul d'indicateurs personnalisés (somme, moyenne, max) et modélisation logique.",
+    link: "#"
+  },
+  {
+    id: 10,
+    title: "Robotics Club Trainer",
+    category: "Stages & Expérience",
+    role: "CMC Rabat",
     date: "Mars 2025 - Avril 2025",
     description: "Conception d'un tableau de bord interactif Power BI basé sur des données issues de capteurs (température, humidité, niveau d'eau, nutriments) et d'actionneurs automatisés.",
     images: [
@@ -142,6 +164,7 @@ export const projects = [
     id: 9,
     title: "Analyse des Ventes Adidas",
     category: "Projets Académiques",
+    role: "Data Analyst",
     date: "Mars 2025",
     description: "Création d'un tableau de bord interactif Power BI pour analyser les ventes Adidas aux États-Unis.",
     images: [
@@ -160,10 +183,42 @@ export const personalInfo = {
   role: "Intelligence Artificielle (IA) & Data Analysis | Power BI • Python • SQL",
   profileImage: "/photos-for.png", // Correct path for file in public folder
   bio: "Data Analyst & AI enthusiast, specialized in data analysis, Power BI dashboards, and database management. Hands-on experience in IoT data analytics, robotics competitions, and real-world AI projects. Curious, proactive, and driven to turn complex data into clear, actionable insights.",
+  experiences: [
+    {
+      role: "Stagiaire Data Analyst",
+      company: "Expert Scope",
+      duration: "2 month - 2025",
+      description: "Analyse de données de capteurs et création de dashboards Power BI."
+    },
+    {
+      role: "Robotics Club Trainer",
+      company: "CMC Rabat",
+      duration: "2025",
+      description: "Conception d'un robot suiveur de ligne récompensé par le 1er prix."
+    },
+    {
+      role: "Robotics Club Member",
+      company: "CMC Rabat",
+      duration: "2023",
+      description: "Développement d'algorithmes de détection d'obstacles."
+    },
+    {
+      role: "Multimedia Lead – Robotics Team",
+      company: "CMC Rabat",
+      duration: "2025",
+      description: "Conception d'un robot suiveur de ligne récompensé par le 1er prix."
+    },
+    {
+      role: "Data Analyst",
+      company: "Expert Scope",
+      duration: "2025-2026",
+      description: "Analyse de données de capteurs et création de dashboards Power BI."
+    }
+  ],
   quote: "Curieux, motivé et déterminé",
   contact: {
     email: "fadoulhatim@gmail.com",
-    phone: "+212 767 313 220",
+    phone: "+212 767-313220",
     location: "Rabat, Maroc",
     github: "https://github.com/7atimf", // Placeholder if not provided
     linkedin: "https://www.linkedin.com/in/hatimfadoul/", // Placeholder if not provided
@@ -171,7 +226,7 @@ export const personalInfo = {
   },
   skills: [
     "Python (Pandas, NumPy, Scikit-learn)",
-    "SQL", "R","Power BI","DAX",
+    "SQL", "R", "Power BI", "DAX",
     "Tableau", "MySQL", "PostgreSQL",
     "MongoDB", "Robotique",
     "Arduino", "Graphic Design",

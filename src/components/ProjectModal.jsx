@@ -55,19 +55,30 @@ const ProjectModal = ({ project, onClose }) => {
                     onClick={onClose}
                     style={{
                         position: 'absolute',
-                        top: '1.5rem',
-                        right: '1.5rem',
-                        background: 'rgba(0,0,0,0.5)',
-                        border: 'none',
-                        color: '#fff',
-                        width: '32px',
-                        height: '32px',
+                        top: '0.5rem',
+                        right: '0.5rem',
+                        background: 'rgba(255,255,255,0.1)',
+                        backdropFilter: 'blur(10px)',
+                        border: '1px solid rgba(255,255,255,0.2)',
+                        color: '#ffffffff',
+                        width: '30px',
+                        height: '30px',
                         borderRadius: '50%',
                         cursor: 'pointer',
-                        fontSize: '1.2rem',
+                        fontSize: '1rem',
                         display: 'flex',
                         alignItems: 'center',
-                        justifyContent: 'center'
+                        justifyContent: 'center',
+                        zIndex: 10,
+                        transition: 'all 0.3s ease'
+                    }}
+                    onMouseOver={e => {
+                        e.currentTarget.style.background = 'var(--accent-color)';
+                        e.currentTarget.style.transform = 'rotate(90deg)';
+                    }}
+                    onMouseOut={e => {
+                        e.currentTarget.style.background = 'rgba(255,255,255,0.1)';
+                        e.currentTarget.style.transform = 'rotate(0deg)';
                     }}
                 >
                     ×
@@ -172,7 +183,20 @@ const ProjectModal = ({ project, onClose }) => {
                 </div>
 
                 <div style={{ padding: '2.5rem' }}>
-                    <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>{project.title}</h2>
+                    <h2 style={{ fontSize: '2.5rem', marginBottom: '0.3rem' }}>{project.title}</h2>
+                    <div style={{
+                        color: 'var(--accent-color)',
+                        fontSize: '1.1rem',
+                        fontWeight: '600',
+                        marginBottom: '1.5rem',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '1rem'
+                    }}>
+                        <span>{project.role}</span>
+                        <span style={{ width: '4px', height: '4px', background: 'rgba(255,255,255,0.3)', borderRadius: '50%' }}></span>
+                        <span style={{ color: 'var(--text-secondary)', fontWeight: '400' }}>{project.date}</span>
+                    </div>
 
                     <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '2rem' }}>
                         {project.tags.map(tag => (
