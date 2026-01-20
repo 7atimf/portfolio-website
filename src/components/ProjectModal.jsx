@@ -234,7 +234,7 @@ const ProjectModal = ({ project, onClose }) => {
                         onMouseOver={e => e.target.style.transform = 'scale(1.05)'}
                         onMouseOut={e => e.target.style.transform = 'scale(1)'}
                     >
-                        View Live Project
+                        Link of Project
                     </a>
                 </div>
             </div>

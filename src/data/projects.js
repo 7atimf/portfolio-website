@@ -1,7 +1,42 @@
 export const projects = [
-  // Internships
-  {
+  // Internships ------------------------------------------------------
+ {
     id: 1,
+    title: "Robotics Club Member",
+    category: "Stages & Expérience",
+    role: "CMC Rabat",
+    date: "2023 - 2024",
+    description: "Membre du Robotics Club de CMC Rabat, où j’ai acquis des bases solides en robotique à travers des formations pratiques et des projets collaboratifs.",
+    images: [
+      "/IMG_0212.JPG",
+    ],
+    tags: ["Robotics", "Arduino", "Capteurs", "Actionneurs", "Travail d’équipe"],
+    details: "Participation active aux activités du club, incluant l’apprentissage de la programmation Arduino, l’utilisation de capteurs et d’actionneurs, ainsi que la réalisation de projets robotiques en équipe. Contribution à plusieurs compétitions robotiques, développement de compétences en résolution de problèmes, logique technique et travail collaboratif.",
+    link: "#"
+  },
+  {
+    id: 2,
+    title: "Robotics Club Trainer",
+    category: "Stages & Expérience",
+    role: "CMC Rabat",
+    date: "2024 - 2025",
+    description: "Membre actif du Robotics Club de CMC Rabat, j’ai évolué vers le rôle de formateur après deux années d’apprentissage et de participation à plusieurs compétitions robotiques. J’ai contribué au développement des compétences techniques des membres à travers des formations pratiques et théoriques.",
+    images: [
+      "/Trainer/trainer-1.png",
+      "/Trainer/trainer-2.png",
+      "/Trainer/trainer-3.png",
+      "/Trainer/trainer-4.png",
+      "/Trainer/trainer-5.png",
+      "/Trainer/trainer-6.png",
+      "/Trainer/trainer-7.png",
+    ],
+    tags: ["Robotics", "Arduino", "Formation","C", "Compétitions", "Team Leadership"],
+    details: "Participation à plusieurs compétitions robotiques en tant que membre du club. Après deux années d’expérience, prise de responsabilité en tant que Trainer : animation de formations en robotique (Arduino, capteurs, actionneurs), accompagnement des nouveaux membres, conception de projets pratiques et encadrement des équipes lors des compétitions. Contribution à la gestion du club, au design visuel et à l’organisation des activités pédagogiques.",
+    link: "https://www.instagram.com/p/DESyNtxMVjT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+  },
+  
+  {
+    id: 3,
     title: "IoT Dashboard & Analytics",
     category: "Stages & Expérience",
     role: "Stagiaire Data Analyst",
@@ -19,9 +54,9 @@ export const projects = [
   },
 
 
-  // Competitions
+  // Competitions---------------------------------------------------------------------------------------------------
   {
-    id: 2,
+    id: 4,
     title: "Robot Suiveur de Ligne (1er Prix ENSET)",
     category: "Compétitions & Hackathons",
     role: "Chef de Projet / Développeur",
@@ -37,7 +72,7 @@ export const projects = [
     link: "#"
   },
   {
-    id: 3,
+    id: 5,
     title: "Robot Intelligent (1er Prix EHTP)",
     category: "Compétitions & Hackathons",
     role: "Développeur",
@@ -53,7 +88,7 @@ export const projects = [
     link: "#"
   },
   {
-    id: 4,
+    id: 6,
     title: "Robot Télécommandé (3e Place ENIM)",
     category: "Compétitions & Hackathons",
     role: "Concepteur",
@@ -66,40 +101,6 @@ export const projects = [
     ],
     tags: ["Robotique", "Télécommande", "Hardware"],
     details: "3ème place au Hackathon ENIM Rabat.",
-    link: "#"
-  },
-
-  // Academic
-  {
-    id: 5,
-    title: "Analyse des Ventes Adidas",
-    category: "Projets Académiques",
-    role: "Data Analyst",
-    date: "Mars 2025",
-    description: "Création d'un tableau de bord interactif Power BI pour analyser les ventes Adidas aux États-Unis.",
-    images: [
-      "https://cdn.dribbble.com/userupload/16087289/file/original-90ebfdb35d7fee7098ef34f683d81742.png?resize=752x&vertical=center",
-      "/photos-for.png",
-      "/ME.png"
-    ],
-    tags: ["Power BI", "DAX", "SQL", "Analysis"],
-    details: "KPIs clés : Total des ventes, bénéfices, marge bénéficiaire. Visualisations : Carte géographique, treemap, graphiques dynamiques. Optimisation des décisions grâce à l'analyse des produits et des régions.",
-    link: "#"
-  },
-  {
-    id: 6,
-    title: "Gestion Base de Données CMC",
-    category: "Projets Académiques",
-    role: "Data Analyst",
-    date: "Février 2024",
-    description: "Conception et gestion de la base de données du CMC (Centre Métiers et Compétences).",
-    images: [
-      "https://cdn.dribbble.com/userupload/24610389/file/original-02a2558166a262dee58063844864ffaf.png?resize=752x&vertical=center",
-      "/photos-for.png",
-      "/ME.png"
-    ],
-    tags: ["MySQL", "SQL Workbench", "Database Design"],
-    details: "Développement de requêtes SQL (CRUD). Définition des structures de tables, attributs et types de données pour un stockage optimisé.",
     link: "#"
   },
   {
@@ -121,47 +122,42 @@ export const projects = [
     details: "Création de 4 pages dynamiques avec KPI, graphiques temporels (jour, mois, heure), et analyses croisées. Analyse des corrélations entre arrosage automatique et évolution des nutriments (azote, phosphore, potassium). Utilisation de DAX pour le calcul d'indicateurs personnalisés (somme, moyenne, max) et modélisation logique.",
     link: "#"
   },
-      {
-    id: 8,
-    title: "Robotics Club Trainer",
-    category: "Stages & Expérience",
-    role: "CMC Rabat",
-    date: "Mars 2025 - Avril 2025",
-    description: "Conception d'un tableau de bord interactif Power BI basé sur des données issues de capteurs (température, humidité, niveau d'eau, nutriments) et d'actionneurs automatisés.",
-    images: [
-      "/23.png",
-      "/1.png",
-      "/1080x680.png",
-      "/Dasheboard page.png",
-      "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2670&auto=format&fit=crop",
-      "/photos-for.png",
-      "/ME.png"
-    ],
-    tags: ["Power BI", "DAX", "IoT", "Data Visualization"],
-    details: "Création de 4 pages dynamiques avec KPI, graphiques temporels (jour, mois, heure), et analyses croisées. Analyse des corrélations entre arrosage automatique et évolution des nutriments (azote, phosphore, potassium). Utilisation de DAX pour le calcul d'indicateurs personnalisés (somme, moyenne, max) et modélisation logique.",
-    link: "#"
-  },
+
+  // Academic -----------------------------------------------------------------------------------------------
   {
-    id: 10,
-    title: "Robotics Club Trainer",
-    category: "Stages & Expérience",
-    role: "CMC Rabat",
-    date: "Mars 2025 - Avril 2025",
-    description: "Conception d'un tableau de bord interactif Power BI basé sur des données issues de capteurs (température, humidité, niveau d'eau, nutriments) et d'actionneurs automatisés.",
+    id: 8,
+    title: "Analyse des Ventes Adidas",
+    category: "Projets Académiques",
+    role: "Data Analyst",
+    date: "Mars 2025",
+    description: "Création d'un tableau de bord interactif Power BI pour analyser les ventes Adidas aux États-Unis.",
     images: [
-      "/1.png",
-      "/1080x680.png",
-      "/Dasheboard page.png",
-      "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2670&auto=format&fit=crop",
+      "https://cdn.dribbble.com/userupload/16087289/file/original-90ebfdb35d7fee7098ef34f683d81742.png?resize=752x&vertical=center",
       "/photos-for.png",
       "/ME.png"
     ],
-    tags: ["Power BI", "DAX", "IoT", "Data Visualization"],
-    details: "Création de 4 pages dynamiques avec KPI, graphiques temporels (jour, mois, heure), et analyses croisées. Analyse des corrélations entre arrosage automatique et évolution des nutriments (azote, phosphore, potassium). Utilisation de DAX pour le calcul d'indicateurs personnalisés (somme, moyenne, max) et modélisation logique.",
+    tags: ["Power BI", "DAX", "SQL", "Analysis"],
+    details: "KPIs clés : Total des ventes, bénéfices, marge bénéficiaire. Visualisations : Carte géographique, treemap, graphiques dynamiques. Optimisation des décisions grâce à l'analyse des produits et des régions.",
     link: "#"
   },
   {
     id: 9,
+    title: "Gestion Base de Données CMC",
+    category: "Projets Académiques",
+    role: "Data Analyst",
+    date: "Février 2024",
+    description: "Conception et gestion de la base de données du CMC (Centre Métiers et Compétences).",
+    images: [
+      "https://cdn.dribbble.com/userupload/24610389/file/original-02a2558166a262dee58063844864ffaf.png?resize=752x&vertical=center",
+      "/photos-for.png",
+      "/ME.png"
+    ],
+    tags: ["MySQL", "SQL Workbench", "Database Design"],
+    details: "Développement de requêtes SQL (CRUD). Définition des structures de tables, attributs et types de données pour un stockage optimisé.",
+    link: "#"
+  },
+  {
+    id: 10,
     title: "Analyse des Ventes Adidas",
     category: "Projets Académiques",
     role: "Data Analyst",
