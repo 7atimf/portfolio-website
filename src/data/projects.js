@@ -4,23 +4,23 @@ export const projects = [
     id: 1,
     title: "Robotics Club Member",
     category: "Stages & Expérience",
-    role: "CMC Rabat",
+    role: "Robotics Club - CMC Rabat",
     date: "2023 - 2024",
-    description: "Membre du Robotics Club de CMC Rabat, où j’ai acquis des bases solides en robotique à travers des formations pratiques et des projets collaboratifs.",
+    description: "Membre du Robotics Club de CMC Rabat, où j'ai acquis des bases solides en robotique à travers des formations pratiques et des projets collaboratifs.",
     images: [
       "/IMG_0212.JPG",
     ],
-    tags: ["Robotics", "Arduino", "Capteurs", "Actionneurs", "Travail d’équipe"],
-    details: "Participation active aux activités du club, incluant l’apprentissage de la programmation Arduino, l’utilisation de capteurs et d’actionneurs, ainsi que la réalisation de projets robotiques en équipe. Contribution à plusieurs compétitions robotiques, développement de compétences en résolution de problèmes, logique technique et travail collaboratif.",
+    tags: ["Robotics", "Arduino", "Capteurs", "Actionneurs", "Travail d'équipe"],
+    details: "Participation active aux activités du club, incluant l'apprentissage de la programmation Arduino, l'utilisation de capteurs et d'actionneurs, ainsi que la réalisation de projets robotiques en équipe. Contribution à plusieurs compétitions robotiques, développement de compétences en résolution de problèmes, logique technique et travail collaboratif.",
     link: "#"
   },
   {
     id: 2,
     title: "Robotics Club Trainer",
     category: "Stages & Expérience",
-    role: "CMC Rabat",
+    role: "Robotics Club - CMC Rabat",
     date: "2024 - 2025",
-    description: "Membre actif du Robotics Club de CMC Rabat, j’ai évolué vers le rôle de formateur après deux années d’apprentissage et de participation à plusieurs compétitions robotiques. J’ai contribué au développement des compétences techniques des membres à travers des formations pratiques et théoriques.",
+    description: "Membre actif du Robotics Club de CMC Rabat, j'ai évolué vers le rôle de formateur après deux années d'apprentissage et de participation à plusieurs compétitions robotiques. J'ai contribué au développement des compétences techniques des membres à travers des formations pratiques et théoriques.",
     images: [
       "/Trainer/trainer-1.png",
       "/Trainer/trainer-2.png",
@@ -31,10 +31,27 @@ export const projects = [
       "/Trainer/trainer-7.png",
     ],
     tags: ["Robotics", "Arduino", "Formation","C", "Compétitions", "Team Leadership"],
-    details: "Participation à plusieurs compétitions robotiques en tant que membre du club. Après deux années d’expérience, prise de responsabilité en tant que Trainer : animation de formations en robotique (Arduino, capteurs, actionneurs), accompagnement des nouveaux membres, conception de projets pratiques et encadrement des équipes lors des compétitions. Contribution à la gestion du club, au design visuel et à l’organisation des activités pédagogiques.",
+    details: "Participation à plusieurs compétitions robotiques en tant que membre du club. Après deux années d'expérience, prise de responsabilité en tant que Trainer : animation de formations en robotique (Arduino, capteurs, actionneurs), accompagnement des nouveaux membres, conception de projets pratiques et encadrement des équipes lors des compétitions. Contribution à la gestion du club, au design visuel et à l'organisation des activités pédagogiques.",
     link: "https://www.instagram.com/p/DESyNtxMVjT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
+  {
+  id: 11,
+  title: "Creative & Media Team Lead",
+  category: "Stages & Expérience",
+  role: "Robotics Club - CMC Rabat",
+  date: "2023 - 2025",
+  description: "Responsable de l'équipe créative et média du Robotics Club, en charge de l'identité visuelle, du montage vidéo et de la gestion des comptes de communication du club.",
+  images: [
+    "/media/MD4.png",
+    "/media/MD3.png",
+    "/media/MD2.png",
+    "/media/MD1.png",
   
+  ],
+  tags: ["Design Graphique", "Montage Vidéo", "Social Media", "Leadership", "Branding"],
+  details: "Encadrement et coordination de l'équipe de design et de montage. Création de supports visuels (affiches, visuels réseaux sociaux, présentations), montage de vidéos promotionnelles et couverture média des événements et compétitions. Gestion et animation des comptes du club sur les réseaux sociaux, planification des publications et amélioration de la visibilité et de l'image du club.",
+  link: "https://www.instagram.com/club_robotique_cmc_rabat/"
+  },
   {
     id: 3,
     title: "IoT Dashboard & Analytics",
@@ -52,6 +69,26 @@ export const projects = [
     details: "Création de 4 pages dynamiques avec KPI, graphiques temporels (jour, mois, heure), et analyses croisées. Analyse des corrélations entre arrosage automatique et évolution des nutriments (azote, phosphore, potassium). Utilisation de DAX pour le calcul d'indicateurs personnalisés (somme, moyenne, max) et modélisation logique.",
     link: "#"
   },
+    {
+    id: 7,
+    title: "IoT Dashboard & Analytics",
+    category: "Stages & Expérience",
+    role: "Stagiaire Data Analyst",
+    date: "Mars 2025 - Avril 2025",
+    description: "Conception d'un tableau de bord interactif Power BI basé sur des données issues de capteurs (température, humidité, niveau d'eau, nutriments) et d'actionneurs automatisés.",
+    images: [
+      "/1080x680.png",
+      "/1.png",
+      "/Dasheboard page.png",
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2670&auto=format&fit=crop",
+      "/photos-for.png",
+      "/ME.png"
+    ],
+    tags: ["Power BI", "DAX", "IoT", "Data Visualization"],
+    details: "Création de 4 pages dynamiques avec KPI, graphiques temporels (jour, mois, heure), et analyses croisées. Analyse des corrélations entre arrosage automatique et évolution des nutriments (azote, phosphore, potassium). Utilisation de DAX pour le calcul d'indicateurs personnalisés (somme, moyenne, max) et modélisation logique.",
+    link: "#"
+  },
+
 
 
   // Competitions---------------------------------------------------------------------------------------------------
@@ -103,25 +140,7 @@ export const projects = [
     details: "3ème place au Hackathon ENIM Rabat.",
     link: "#"
   },
-  {
-    id: 7,
-    title: "IoT Dashboard & Analytics",
-    category: "Stages & Expérience",
-    role: "Stagiaire Data Analyst",
-    date: "Mars 2025 - Avril 2025",
-    description: "Conception d'un tableau de bord interactif Power BI basé sur des données issues de capteurs (température, humidité, niveau d'eau, nutriments) et d'actionneurs automatisés.",
-    images: [
-      "/1080x680.png",
-      "/1.png",
-      "/Dasheboard page.png",
-      "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2670&auto=format&fit=crop",
-      "/photos-for.png",
-      "/ME.png"
-    ],
-    tags: ["Power BI", "DAX", "IoT", "Data Visualization"],
-    details: "Création de 4 pages dynamiques avec KPI, graphiques temporels (jour, mois, heure), et analyses croisées. Analyse des corrélations entre arrosage automatique et évolution des nutriments (azote, phosphore, potassium). Utilisation de DAX pour le calcul d'indicateurs personnalisés (somme, moyenne, max) et modélisation logique.",
-    link: "#"
-  },
+
 
   // Academic -----------------------------------------------------------------------------------------------
   {
@@ -199,7 +218,7 @@ export const personalInfo = {
       description: "Développement d'algorithmes de détection d'obstacles."
     },
     {
-      role: "Multimedia Lead – Robotics Team",
+      role: "Multimedia Lead - Robotics Team",
       company: "CMC Rabat",
       duration: "2025",
       description: "Conception d'un robot suiveur de ligne récompensé par le 1er prix."
@@ -232,12 +251,12 @@ export const personalInfo = {
     {
       degree: "Technicien Spécialisé en AI (Option Assistant Data Analyst)",
       school: "CMC, Rabat",
-      year: "2023 – 2025"
+      year: "2023 - 2025"
     },
     {
       degree: "Baccalauréat Science Mathématique",
       school: "Lycée Molay Rachid, Mecharaa Bel Ksiri",
-      year: "2021 – 2022"
+      year: "2021 - 2022"
     }
   ],
   languages: [
