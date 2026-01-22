@@ -25,14 +25,13 @@ export const projects = [
     title: "Projet Data & Automatisation",
     category: "Stages & Expérience",
     role: "Expert Scope | Maroc Telecom",
-    date: "Mars 2025 - Avril 2025",
+    date: "juillet 2025 - Janvier 2026",
     description: "Dans le cadre de ma collaboration avec Expert Scope, j’ai participé à un projet réalisé pour Maroc Telecom, portant sur la supervision et l’optimisation d’un système de climatisation automatisé basé sur des automates programmables industriels (PLC).",
     images: [
       "/MAROC TELECOM/ES MT 1.png",
-      "/Dasheboard page.png",
-      "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2670&auto=format&fit=crop",
-      "/photos-for.png",
-      "/ME.png"
+      "/MAROC TELECOM/ES MT 2.png",
+      "/MAROC TELECOM/ES MT 3.png",
+      "/MAROC TELECOM/ES MT 4.png"
     ],
     tags: ["Power BI","Python", "ETL", "PLC", "SSH", "SQLite", "PostgreSQL", "Data Gateway", "IoT"],
     details: "Le système collectait des données provenant de vannes automatiques et de capteurs d’écart, générées directement par les PLC sous forme de fichiers bases de données SQLite. Mon rôle a consisté à concevoir et mettre en œuvre une chaîne complète de traitement des données industrielles, depuis la collecte jusqu’à la visualisation en ligne.\n\nPrincipales contributions :\n- Récupération quotidienne et sécurisée des données des PLC via SSH\n- Automatisation de la gestion et du renommage des fichiers de données\n- Développement de scripts pour l’extraction des données depuis SQLite\n- Intégration et centralisation des données dans une base PostgreSQL\n- Mise en place d’un flux ETL structuré et fiable\n- Connexion de la base de données à Power BI Service via On-premises Data Gateway\n- Création de tableaux de bord en ligne pour le suivi et l’analyse en temps quasi réel\n\nRésultat :\nUne solution de supervision industrielle de bout en bout permettant un suivi continu des performances du système de climatisation, facilitant la détection des anomalies et l’aide à la prise de décision.",
