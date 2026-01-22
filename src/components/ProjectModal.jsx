@@ -198,7 +198,7 @@ const ProjectModal = ({ project, onClose }) => {
                         <span style={{ color: 'var(--text-secondary)', fontWeight: '400' }}>{project.date}</span>
                     </div>
 
-                    <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '2rem' }}>
+                    <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '2rem', flexWrap: 'wrap' }}>
                         {project.tags.map(tag => (
                             <span key={tag} style={{
                                 fontSize: '0.85rem',

@@ -1,24 +1,62 @@
 export const projects = [
   // Internships ------------------------------------------------------
- {
+  {
     id: 1,
+    title: "Data Analyst Intern",
+    category: "Stages & Expérience",
+    role: "Expert Scope",
+    date: "Mars 2025 - Avril 2025",
+    description: "Stage effectué au sein de l'entreprise Expert Scope, spécialisée dans les solutions agricoles intelligentes, avec pour objectif le développement d'un tableau de bord interactif pour la visualisation et l'analyse de données agricoles.",
+    images: [
+      "/EXPERTSCOPE/EX 0.png",
+      "/EXPERTSCOPE/EX 1.png",
+      "/EXPERTSCOPE/EX 2.png",
+      "/EXPERTSCOPE/EX 3.png",
+      "/EXPERTSCOPE/EX 4.png",
+      "/EXPERTSCOPE/EX 5.png",
+      "/EXPERTSCOPE/EX 6.png",
+    ],
+    tags: ["Power BI", "Python", "Pandas", "NumPy", "Adobe Photoshop", "Iot", "PLC"],
+    details: "Conception d'un tableau de bord Power BI basé sur des données issues d'un système IoT connecté à des capteurs environnementaux et des actionneurs automatisés. Analyse en temps réel de la température, de l'humidité, du niveau d'eau, des nutriments du sol (NPK) et du fonctionnement des équipements (pompes, ventilateurs). Le projet a inclus le nettoyage des données, la modélisation, la conception visuelle et la publication sur Power BI Service. Le résultat est un outil d'aide à la décision favorisant une gestion plus efficace, durable et intelligente des ressources agricoles.",
+    link: ""
+  },
+  {
+    id: 2,
+    title: "Projet Data & Automatisation",
+    category: "Stages & Expérience",
+    role: "Expert Scope | Maroc Telecom",
+    date: "Mars 2025 - Avril 2025",
+    description: "Dans le cadre de ma collaboration avec Expert Scope, j’ai participé à un projet réalisé pour Maroc Telecom, portant sur la supervision et l’optimisation d’un système de climatisation automatisé basé sur des automates programmables industriels (PLC).",
+    images: [
+      "/MAROC TELECOM/ES MT 1.png",
+      "/Dasheboard page.png",
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2670&auto=format&fit=crop",
+      "/photos-for.png",
+      "/ME.png"
+    ],
+    tags: ["Power BI","Python", "ETL", "PLC", "SSH", "SQLite", "PostgreSQL", "Data Gateway", "IoT"],
+    details: "Le système collectait des données provenant de vannes automatiques et de capteurs d’écart, générées directement par les PLC sous forme de fichiers bases de données SQLite. Mon rôle a consisté à concevoir et mettre en œuvre une chaîne complète de traitement des données industrielles, depuis la collecte jusqu’à la visualisation en ligne.\n\nPrincipales contributions :\n- Récupération quotidienne et sécurisée des données des PLC via SSH\n- Automatisation de la gestion et du renommage des fichiers de données\n- Développement de scripts pour l’extraction des données depuis SQLite\n- Intégration et centralisation des données dans une base PostgreSQL\n- Mise en place d’un flux ETL structuré et fiable\n- Connexion de la base de données à Power BI Service via On-premises Data Gateway\n- Création de tableaux de bord en ligne pour le suivi et l’analyse en temps quasi réel\n\nRésultat :\nUne solution de supervision industrielle de bout en bout permettant un suivi continu des performances du système de climatisation, facilitant la détection des anomalies et l’aide à la prise de décision.",
+    link: "#"
+  },
+  {
+    id: 3,
     title: "Robotics Club Member",
     category: "Stages & Expérience",
-    role: "Robotics Club - CMC Rabat",
+    role: "Club Robotique CMC Rabat",
     date: "2023 - 2024",
     description: "Membre du Robotics Club de CMC Rabat, où j'ai acquis des bases solides en robotique à travers des formations pratiques et des projets collaboratifs.",
     images: [
       "/IMG_0212.JPG",
     ],
-    tags: ["Robotics", "Arduino", "Capteurs", "Actionneurs", "Travail d'équipe"],
+    tags: ["Robotics", "Arduino", "Capteurs", "c", "Actionneurs", "Travail d'équipe"],
     details: "Participation active aux activités du club, incluant l'apprentissage de la programmation Arduino, l'utilisation de capteurs et d'actionneurs, ainsi que la réalisation de projets robotiques en équipe. Contribution à plusieurs compétitions robotiques, développement de compétences en résolution de problèmes, logique technique et travail collaboratif.",
     link: "#"
   },
   {
-    id: 2,
+    id: 4,
     title: "Robotics Club Trainer",
     category: "Stages & Expérience",
-    role: "Robotics Club - CMC Rabat",
+    role: "Club Robotique CMC Rabat",
     date: "2024 - 2025",
     description: "Membre actif du Robotics Club de CMC Rabat, j'ai évolué vers le rôle de formateur après deux années d'apprentissage et de participation à plusieurs compétitions robotiques. J'ai contribué au développement des compétences techniques des membres à travers des formations pratiques et théoriques.",
     images: [
@@ -30,72 +68,32 @@ export const projects = [
       "/Trainer/trainer-6.png",
       "/Trainer/trainer-7.png",
     ],
-    tags: ["Robotics", "Arduino", "Formation","C", "Compétitions", "Team Leadership"],
+    tags: ["Robotics", "Arduino", "Formation", "C", "Compétitions", "Team Leadership"],
     details: "Participation à plusieurs compétitions robotiques en tant que membre du club. Après deux années d'expérience, prise de responsabilité en tant que Trainer : animation de formations en robotique (Arduino, capteurs, actionneurs), accompagnement des nouveaux membres, conception de projets pratiques et encadrement des équipes lors des compétitions. Contribution à la gestion du club, au design visuel et à l'organisation des activités pédagogiques.",
     link: "https://www.instagram.com/p/DESyNtxMVjT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
-  id: 11,
-  title: "Creative & Media Team Lead",
-  category: "Stages & Expérience",
-  role: "Robotics Club - CMC Rabat",
-  date: "2023 - 2025",
-  description: "Responsable de l'équipe créative et média du Robotics Club, en charge de l'identité visuelle, du montage vidéo et de la gestion des comptes de communication du club.",
-  images: [
-    "/media/MD4.png",
-    "/media/MD3.png",
-    "/media/MD2.png",
-    "/media/MD1.png",
-  
-  ],
-  tags: ["Design Graphique", "Montage Vidéo", "Social Media", "Leadership", "Branding"],
-  details: "Encadrement et coordination de l'équipe de design et de montage. Création de supports visuels (affiches, visuels réseaux sociaux, présentations), montage de vidéos promotionnelles et couverture média des événements et compétitions. Gestion et animation des comptes du club sur les réseaux sociaux, planification des publications et amélioration de la visibilité et de l'image du club.",
-  link: "https://www.instagram.com/club_robotique_cmc_rabat/"
-  },
-  {
-    id: 3,
-    title: "IoT Dashboard & Analytics",
+    id: 5,
+    title: "Creative & Media Team Lead",
     category: "Stages & Expérience",
-    role: "Stagiaire Data Analyst",
-    date: "Mars 2025 - Avril 2025",
-    description: "Conception d'un tableau de bord interactif Power BI basé sur des données issues de capteurs (température, humidité, niveau d'eau, nutriments) et d'actionneurs automatisés.",
+    role: "Club Robotique CMC Rabat",
+    date: "2023 - 2025",
+    description: "Responsable de l'équipe créative et média du Robotics Club, en charge de l'identité visuelle, du montage vidéo et de la gestion des comptes de communication du club.",
     images: [
-      "/1080x680.png",
-      "/EXPERTSCOPE/EX 1.png",
-      "/EXPERTSCOPE/EX 2.png",
-      "/EXPERTSCOPE/EX 3.png",
-      "/EXPERTSCOPE/EX 4.png",
-      "/EXPERTSCOPE/EX 5.png",
-    ],
-    tags: ["Power BI", "DAX", "IoT", "Data Visualization"],
-    details: "Création de 4 pages dynamiques avec KPI, graphiques temporels (jour, mois, heure), et analyses croisées. Analyse des corrélations entre arrosage automatique et évolution des nutriments (azote, phosphore, potassium). Utilisation de DAX pour le calcul d'indicateurs personnalisés (somme, moyenne, max) et modélisation logique.",
-    link: ""
-  },
-    {
-    id: 7,
-    title: "IoT Dashboard & Analytics",
-    category: "Stages & Expérience",
-    role: "Stagiaire Data Analyst",
-    date: "Mars 2025 - Avril 2025",
-    description: "Conception d'un tableau de bord interactif Power BI basé sur des données issues de capteurs (température, humidité, niveau d'eau, nutriments) et d'actionneurs automatisés.",
-    images: [
-      "/1080x680.png",
-      "/1.png",
-      "/Dasheboard page.png",
-      "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2670&auto=format&fit=crop",
-      "/photos-for.png",
-      "/ME.png"
-    ],
-    tags: ["Power BI", "DAX", "IoT", "Data Visualization"],
-    details: "Création de 4 pages dynamiques avec KPI, graphiques temporels (jour, mois, heure), et analyses croisées. Analyse des corrélations entre arrosage automatique et évolution des nutriments (azote, phosphore, potassium). Utilisation de DAX pour le calcul d'indicateurs personnalisés (somme, moyenne, max) et modélisation logique.",
-    link: "#"
-  },
+      "/media/MD4.png",
+      "/media/MD3.png",
+      "/media/MD2.png",
+      "/media/MD1.png",
 
-
+    ],
+    tags: ["Design Graphique", "Montage Vidéo", "Social Media", "Leadership", "Branding"],
+    details: "Encadrement et coordination de l'équipe de design et de montage. Création de supports visuels (affiches, visuels réseaux sociaux, présentations), montage de vidéos promotionnelles et couverture média des événements et compétitions. Gestion et animation des comptes du club sur les réseaux sociaux, planification des publications et amélioration de la visibilité et de l'image du club.",
+    link: "https://www.instagram.com/club_robotique_cmc_rabat/"
+  },
 
   // Competitions---------------------------------------------------------------------------------------------------
   {
-    id: 4,
+    id: 7,
     title: "Robot Suiveur de Ligne (1er Prix ENSET)",
     category: "Compétitions & Hackathons",
     role: "Chef de Projet / Développeur",
@@ -111,7 +109,7 @@ export const projects = [
     link: "#"
   },
   {
-    id: 5,
+    id: 8,
     title: "Robot Intelligent (1er Prix EHTP)",
     category: "Compétitions & Hackathons",
     role: "Développeur",
@@ -127,7 +125,7 @@ export const projects = [
     link: "#"
   },
   {
-    id: 6,
+    id: 9,
     title: "Robot Télécommandé (3e Place ENIM)",
     category: "Compétitions & Hackathons",
     role: "Concepteur",
@@ -146,7 +144,7 @@ export const projects = [
 
   // Academic -----------------------------------------------------------------------------------------------
   {
-    id: 8,
+    id: 10,
     title: "Analyse des Ventes Adidas",
     category: "Projets Académiques",
     role: "Data Analyst",
@@ -162,7 +160,7 @@ export const projects = [
     link: "#"
   },
   {
-    id: 9,
+    id: 11,
     title: "Gestion Base de Données CMC",
     category: "Projets Académiques",
     role: "Data Analyst",
@@ -178,7 +176,7 @@ export const projects = [
     link: "#"
   },
   {
-    id: 10,
+    id: 12,
     title: "Analyse des Ventes Adidas",
     category: "Projets Académiques",
     role: "Data Analyst",

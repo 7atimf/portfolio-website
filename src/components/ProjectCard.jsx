@@ -32,8 +32,11 @@ const ProjectCard = ({ project, onClick }) => {
             </div>
             <div style={{ padding: '1.5rem' }}>
                 <h3 style={{ marginBottom: '0.2rem', fontSize: '1.25rem' }}>{project.title}</h3>
-                <div style={{ color: 'var(--accent-color)', fontSize: '0.85rem', fontWeight: '600', marginBottom: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
+                <div style={{ color: 'var(--accent-color)', fontSize: '0.85rem', fontWeight: '600', marginBottom: '0.4rem', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
                     {project.role}
+                </div>
+                <div style={{ color: 'var(--text-secondary)', fontSize: '0.8rem', marginBottom: '0.8rem' }}>
+                    {project.date}
                 </div>
                 <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginBottom: '1rem', display: '-webkit-box', WebkitLineClamp: '2', WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
                     {project.description}
