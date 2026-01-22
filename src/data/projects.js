@@ -60,14 +60,16 @@ export const projects = [
     date: "Mars 2025 - Avril 2025",
     description: "Conception d'un tableau de bord interactif Power BI basé sur des données issues de capteurs (température, humidité, niveau d'eau, nutriments) et d'actionneurs automatisés.",
     images: [
-      "Dasheboard page.png",
-      "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2670&auto=format&fit=crop",
-      "/photos-for.png",
-      "/ME.png"
+      "/1080x680.png",
+      "/EXPERTSCOPE/EX 1.png",
+      "/EXPERTSCOPE/EX 2.png",
+      "/EXPERTSCOPE/EX 3.png",
+      "/EXPERTSCOPE/EX 4.png",
+      "/EXPERTSCOPE/EX 5.png",
     ],
     tags: ["Power BI", "DAX", "IoT", "Data Visualization"],
     details: "Création de 4 pages dynamiques avec KPI, graphiques temporels (jour, mois, heure), et analyses croisées. Analyse des corrélations entre arrosage automatique et évolution des nutriments (azote, phosphore, potassium). Utilisation de DAX pour le calcul d'indicateurs personnalisés (somme, moyenne, max) et modélisation logique.",
-    link: "#"
+    link: ""
   },
     {
     id: 7,
