@@ -29,6 +29,7 @@ export const projects = [
     description: "Dans le cadre de ma collaboration avec Expert Scope, j’ai participé à un projet réalisé pour Maroc Telecom, portant sur la supervision et l’optimisation d’un système de climatisation automatisé basé sur des automates programmables industriels (PLC).",
     images: [
       "/MAROC TELECOM/ES MT 1.png",
+      "/MAROC TELECOM/ES MT 5.png",
       "/MAROC TELECOM/ES MT 2.png",
       "/MAROC TELECOM/ES MT 3.png",
       "/MAROC TELECOM/ES MT 4.png"
