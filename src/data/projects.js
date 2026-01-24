@@ -26,7 +26,7 @@ export const projects = [
     category: "Stages & Expérience",
     role: "Expert Scope | Maroc Telecom",
     date: "juillet 2025 - Janvier 2026",
-    description: "Dans le cadre de ma collaboration avec Expert Scope, j’ai participé à un projet réalisé pour Maroc Telecom, portant sur la supervision et l’optimisation d’un système de climatisation automatisé basé sur des automates programmables industriels (PLC).",
+    description: "Participation à un projet industriel réalisé pour Maroc Telecom, axé sur la supervision et l'optimisation d'un système de climatisation automatisé basé sur des automates programmables industriels (PLC).",
     images: [
       "/MAROC TELECOM/ES MT 1.png",
       "/MAROC TELECOM/ES MT 5.png",
@@ -34,8 +34,8 @@ export const projects = [
       "/MAROC TELECOM/ES MT 3.png",
       "/MAROC TELECOM/ES MT 4.png"
     ],
-    tags: ["Power BI","Python", "ETL", "PLC", "SSH", "SQLite", "PostgreSQL", "Data Gateway", "IoT"],
-    details: "Le système collectait des données provenant de vannes automatiques et de capteurs d’écart, générées directement par les PLC sous forme de fichiers bases de données SQLite. Mon rôle a consisté à concevoir et mettre en œuvre une chaîne complète de traitement des données industrielles, depuis la collecte jusqu’à la visualisation en ligne.\n\nPrincipales contributions :\n- Récupération quotidienne et sécurisée des données des PLC via SSH\n- Automatisation de la gestion et du renommage des fichiers de données\n- Développement de scripts pour l’extraction des données depuis SQLite\n- Intégration et centralisation des données dans une base PostgreSQL\n- Mise en place d’un flux ETL structuré et fiable\n- Connexion de la base de données à Power BI Service via On-premises Data Gateway\n- Création de tableaux de bord en ligne pour le suivi et l’analyse en temps quasi réel\n\nRésultat :\nUne solution de supervision industrielle de bout en bout permettant un suivi continu des performances du système de climatisation, facilitant la détection des anomalies et l’aide à la prise de décision.",
+    tags: ["PLC", "Industrial Automation", "ETL", "PostgreSQL", "SQLite", "Power BI", "IoT Industriel"],
+    details: "Le projet consistait à collecter automatiquement les données générées par les PLC à partir de vannes automatiques et de capteurs d'écart. Les données étaient produites sous forme de fichiers SQLite (.db). J'ai mis en place une connexion sécurisée via SSH pour récupérer quotidiennement ces fichiers et automatiser leur renommage afin d'assurer une meilleure organisation et traçabilité. Des scripts ont été développés pour extraire et transférer les données depuis SQLite vers une base de données PostgreSQL, constituant une base centralisée pour l'analyse. Les données ont ensuite été connectées à Power BI Service à l'aide de On-premises Data Gateway, permettant la création de tableaux de bord en ligne pour le suivi en temps quasi réel du système de climatisation et l'aide à la prise de décision.",
     link: "#"
   },
   {
@@ -92,38 +92,80 @@ export const projects = [
   },
 
   // Competitions---------------------------------------------------------------------------------------------------
+  // {
+  //   id: 7,
+  //   title: "Robot Suiveur de Ligne (1er Prix ENSET)",
+  //   category: "Compétitions & Hackathons",
+  //   role: "Chef de Projet / Développeur",
+  //   date: "2024",
+  //   description: "Conception d'un robot suiveur de ligne télécommandé et autonome pour une compétition 1 vs 1. Remporté le 1er prix à l'ENSET Mohammedia.",
+  //   images: [
+  //     "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=2670&auto=format&fit=crop",
+  //     "/photos-for.png",
+  //     "/ME.png"
+  //   ],
+  //   tags: ["Arduino", "Robotique", "C++", "Électronique"],
+  //   details: "Développement des algorithmes de suivi de ligne et de navigation autonome. Optimisation de la vitesse et de la précision pour la compétition.",
+  //   link: "#"
+  // },
   {
-    id: 7,
-    title: "Robot Suiveur de Ligne (1er Prix ENSET)",
+    id: 13,
+    title: "Robot Suiveur de Ligne & Combat (1st Place - ENSET)",
     category: "Compétitions & Hackathons",
-    role: "Chef de Projet / Développeur",
-    date: "2024",
-    description: "Conception d'un robot suiveur de ligne télécommandé et autonome pour une compétition 1 vs 1. Remporté le 1er prix à l'ENSET Mohammedia.",
+    role: "ENSET Mohammedia",
+    date: "May 2025",
+    description: "Participation à la compétition de robotique organisée à l'ENSET Mohammedia. Conception d'un robot Arduino capable de suivre une ligne noire, d'éviter des obstacles et de s'adapter à différents modes de fonctionnement. Projet récompensé par le 1er prix.",
     images: [
-      "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=2670&auto=format&fit=crop",
-      "/photos-for.png",
-      "/ME.png"
+    "/Competitions/ENSET 1.png",
+    "/Competitions/ENSET 2.png",
+    "/Competitions/ENSET 3.png",
+    "/Competitions/ENSET 4.png",
     ],
-    tags: ["Arduino", "Robotique", "C++", "Électronique"],
-    details: "Développement des algorithmes de suivi de ligne et de navigation autonome. Optimisation de la vitesse et de la précision pour la compétition.",
-    link: "#"
+    tags: ["Arduino", "Robotique", "C++", "Capteurs", "Compétition"],
+    details: "La compétition se déroulait en deux phases. La première phase consistait à développer un robot autonome capable de suivre une ligne noire, détecter et éviter des obstacles, puis reprendre sa trajectoire dans un temps minimal. La seconde phase utilisait le même robot, reprogrammé pour fonctionner en mode télécommandé via un téléphone mobile. Cette phase opposait deux robots dans une arène, avec pour objectif de pousser une balle située au centre du terrain vers la zone adverse. Le projet a nécessité une optimisation du code, une gestion efficace des capteurs et une grande réactivité, menant à l'obtention de la première place.",
+    link: "https://www.instagram.com/p/DKfS-rKsnGE/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
-  {
-    id: 8,
-    title: "Robot Intelligent (1er Prix EHTP)",
-    category: "Compétitions & Hackathons",
-    role: "Développeur",
-    date: "2024",
-    description: "Développement d'un robot suiveur de ligne intelligent avec détection et évitement automatique des obstacles. 1er Prix au Hackathon EHTP Casablanca.",
-    images: [
-      "/photos-for.png",
-      "/photos-for.png",
-      "/ME.png"
-    ],
-    tags: ["Arduino", "Capteurs", "Algorithmique"],
-    details: "Implémentation de capteurs ultrasoniques pour la détection d'obstacles et logique d'évitement fluide.",
-    link: "#"
-  },
+  // {
+  //   id: 8,
+  //   title: "Robot Intelligent (1st Place - EHTP)",
+  //   category: "Compétitions & Hackathons",
+  //   role: "Développeur",
+  //   date: "2024",
+  //   description: "Développement d'un robot suiveur de ligne intelligent avec détection et évitement automatique des obstacles. 1er Prix au Hackathon EHTP Casablanca.",
+  //   images: [
+  //     "/photos-for.png",
+  //     "/photos-for.png",
+  //     "/ME.png"
+  //   ],
+  //   tags: ["Arduino", "Capteurs", "Algorithmique"],
+  //   details: "Implémentation de capteurs ultrasoniques pour la détection d'obstacles et logique d'évitement fluide.",
+  //   link: "#"
+  // },
+  
+{
+  id: 14,
+  title: "Robot Suiveur de Ligne Intelligent (1st Place Hackathon EHTP)",
+  category: "Compétitions & Hackathons",
+  role: "EHTP Casablanca",
+  date: "Juin 2025",
+  description: "Développement d'un robot suiveur de ligne intelligent lors d'un hackathon intensif organisé à l'EHTP Casablanca. Projet récompensé par le 1er Prix.",
+  images: [
+    "/Competitions/EHTP 1.png",
+    "/Competitions/EHTP 2.png",
+    "/Competitions/EHTP 3.png",
+    "/Competitions/EHTP 4.png",
+  ],
+  tags: [
+    "Arduino",
+    "Robotique",
+    "Capteurs Ultrasoniques", 
+    "Navigation Autonome",
+    "Hackathon"
+  ],
+  details: "Hackathon d'une journée nécessitant un travail continu jusqu'à tard dans la nuit. Le défi consistait à concevoir un robot autonome capable de se déplacer sur une carte tracée, suivre un itinéraire précis, détecter et éviter automatiquement des obstacles à l'aide de capteurs ultrasoniques. Le robot devait identifier les objets rencontrés et transmettre leurs positions (coordonnées / localisation) vers une application dédiée. Une logique de navigation intelligente et un algorithme d'évitement fluide ont été implémentés afin d'assurer précision, fiabilité et rapidité d'exécution, menant à l'obtention de la première place.",
+  link: "#"
+},
+
   {
     id: 9,
     title: "Robot Télécommandé (3e Place ENIM)",
