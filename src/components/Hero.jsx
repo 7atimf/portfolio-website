@@ -71,7 +71,6 @@ const Hero = () => {
                             <FaInstagram size={28} />
                         </a>
                         <a
-                            onClick={(e) => { e.preventDefault(); window.location.href = `mailto:${personalInfo.contact.email}`; }}
                             href={`mailto:${personalInfo.contact.email}`}
                             style={iconBtnStyle}
                             title="Email"

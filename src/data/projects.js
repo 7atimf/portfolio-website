@@ -90,27 +90,8 @@ export const projects = [
     details: "Encadrement et coordination de l'équipe de design et de montage. Création de supports visuels (affiches, visuels réseaux sociaux, présentations), montage de vidéos promotionnelles et couverture média des événements et compétitions. Gestion et animation des comptes du club sur les réseaux sociaux, planification des publications et amélioration de la visibilité et de l'image du club.",
     link: "https://www.instagram.com/club_robotique_cmc_rabat/"
   },
-
-  // Competitions---------------------------------------------------------------------------------------------------
-  // {
-  //   id: 7,
-  //   title: "Robot Suiveur de Ligne (1er Prix ENSET)",
-  //   category: "Compétitions & Hackathons",
-  //   role: "Chef de Projet / Développeur",
-  //   date: "2024",
-  //   description: "Conception d'un robot suiveur de ligne télécommandé et autonome pour une compétition 1 vs 1. Remporté le 1er prix à l'ENSET Mohammedia.",
-  //   images: [
-  //     "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=2670&auto=format&fit=crop",
-  //     "/photos-for.png",
-  //     "/ME.png"
-  //   ],
-  //   tags: ["Arduino", "Robotique", "C++", "Électronique"],
-  //   details: "Développement des algorithmes de suivi de ligne et de navigation autonome. Optimisation de la vitesse et de la précision pour la compétition.",
-  //   link: "#"
-  // },
   {
     id: 13,
-    // title: "Robot Suiveur de Ligne & Combat (1st Place - ENSET)",
     title: "1st Place - ENSET",
     category: "Compétitions & Hackathons",
     role: "ENSET Mohammedia",
@@ -126,26 +107,8 @@ export const projects = [
     details: "La compétition se déroulait en deux phases. La première phase consistait à développer un robot autonome capable de suivre une ligne noire, détecter et éviter des obstacles, puis reprendre sa trajectoire dans un temps minimal. La seconde phase utilisait le même robot, reprogrammé pour fonctionner en mode télécommandé via un téléphone mobile. Cette phase opposait deux robots dans une arène, avec pour objectif de pousser une balle située au centre du terrain vers la zone adverse. Le projet a nécessité une optimisation du code, une gestion efficace des capteurs et une grande réactivité, menant à l'obtention de la première place.",
     link: "https://www.instagram.com/p/DKfS-rKsnGE/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
-  // {
-  //   id: 8,
-  //   title: "Robot Intelligent (1st Place - EHTP)",
-  //   category: "Compétitions & Hackathons",
-  //   role: "Développeur",
-  //   date: "2024",
-  //   description: "Développement d'un robot suiveur de ligne intelligent avec détection et évitement automatique des obstacles. 1er Prix au Hackathon EHTP Casablanca.",
-  //   images: [
-  //     "/photos-for.png",
-  //     "/photos-for.png",
-  //     "/ME.png"
-  //   ],
-  //   tags: ["Arduino", "Capteurs", "Algorithmique"],
-  //   details: "Implémentation de capteurs ultrasoniques pour la détection d'obstacles et logique d'évitement fluide.",
-  //   link: "#"
-  // },
-  
 {
   id: 14,
-  // title: "Robot Suiveur de Ligne Intelligent (1st Place Hackathon EHTP)",
   title: "1st Place Hackathon EHTP",
   category: "Compétitions & Hackathons",
   role: "EHTP Casablanca",
@@ -241,7 +204,7 @@ export const projects = [
 export const personalInfo = {
   name: "FADOUL Hatim",
   role: "Intelligence Artificielle (IA) & Data Analysis | Power BI • Python • SQL",
-  profileImage: "/photos-for.png", // Correct path for file in public folder
+  profileImage: "/photos-for.png", 
   bio: "Data Analyst & AI enthusiast, specialized in data analysis, Power BI dashboards, and database management. Hands-on experience in IoT data analytics, robotics competitions, and real-world AI projects. Curious, proactive, and driven to turn complex data into clear, actionable insights.",
   experiences: [
     {
@@ -280,9 +243,10 @@ export const personalInfo = {
     email: "fadoulhatim@gmail.com",
     phone: "+212 767-313220",
     location: "Rabat, Maroc",
-    github: "https://github.com/7atimf", // Placeholder if not provided
-    linkedin: "https://www.linkedin.com/in/hatimfadoul/", // Placeholder if not provided
-    instagram: "https://www.instagram.com/hatim.fadoul/" // Placeholder
+    github: "https://github.com/7atimf",
+    linkedin: "https://www.linkedin.com/in/hatimfadoul/", 
+    instagram: "https://www.instagram.com/hatim.fadoul/" ,
+    snap: "https://www.7olm.ma"
   },
   skills: [
     "Python (Pandas, NumPy, Scikit-learn)",

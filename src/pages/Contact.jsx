@@ -64,33 +64,44 @@ const Contact = () => {
 
 // Sub-components & Styles
 const ContactItem = ({ icon, text, link }) => {
-    const handleClick = () => {
-        if (link) {
-            window.location.href = link;
-        }
-    };
-
-    return (
-        <div
-            onClick={handleClick}
-            style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '1rem',
-                width: '100%',
-                padding: '0.8rem',
-                borderRadius: '8px',
-                transition: 'all 0.3s ease',
-                cursor: link ? 'pointer' : 'default',
-                background: 'rgba(255,255,255,0.02)',
-                border: '1px solid rgba(255,255,255,0.05)'
-            }}
-            className="contact-item"
-            onMouseEnter={(e) => { if (link) e.currentTarget.style.background = 'rgba(255,255,255,0.08)'; }}
-            onMouseLeave={(e) => { e.currentTarget.style.background = 'rgba(255,255,255,0.02)'; }}
-        >
+    const content = (
+        <>
             <span style={{ color: 'var(--accent-color)', fontSize: '1.2rem', display: 'flex' }}>{icon}</span>
             <span style={{ color: 'var(--text-primary)', fontSize: '0.95rem' }}>{text}</span>
+        </>
+    );
+
+    const commonStyles = {
+        display: 'flex',
+        alignItems: 'center',
+        gap: '1rem',
+        width: '100%',
+        padding: '0.8rem',
+        borderRadius: '8px',
+        transition: 'all 0.3s ease',
+        cursor: link ? 'pointer' : 'default',
+        background: 'rgba(255,255,255,0.02)',
+        border: '1px solid rgba(255,255,255,0.05)',
+        textDecoration: 'none'
+    };
+
+    if (link) {
+        return (
+            <a
+                href={link}
+                style={commonStyles}
+                className="contact-item"
+                onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(255,255,255,0.08)'; }}
+                onMouseLeave={(e) => { e.currentTarget.style.background = 'rgba(255,255,255,0.02)'; }}
+            >
+                {content}
+            </a>
+        );
+    }
+
+    return (
+        <div style={commonStyles} className="contact-item">
+            {content}
         </div>
     );
 };
