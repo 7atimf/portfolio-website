@@ -34,7 +34,7 @@ export const projects = [
       "/MAROC TELECOM/ES MT 3.png",
       "/MAROC TELECOM/ES MT 4.png"
     ],
-    tags: ["PLC", "Industrial Automation", "ETL", "PostgreSQL", "SQLite", "Power BI", "IoT Industriel"],
+    tags: ["Power BI","PLC","PostgreSQL","SQLite", "ETL","Python", "SSH", "IoT Industriel"],
     details: "Le projet consistait à collecter automatiquement les données générées par les PLC à partir de vannes automatiques et de capteurs d'écart. Les données étaient produites sous forme de fichiers SQLite (.db). J'ai mis en place une connexion sécurisée via SSH pour récupérer quotidiennement ces fichiers et automatiser leur renommage afin d'assurer une meilleure organisation et traçabilité. Des scripts ont été développés pour extraire et transférer les données depuis SQLite vers une base de données PostgreSQL, constituant une base centralisée pour l'analyse. Les données ont ensuite été connectées à Power BI Service à l'aide de On-premises Data Gateway, permettant la création de tableaux de bord en ligne pour le suivi en temps quasi réel du système de climatisation et l'aide à la prise de décision.",
     link: "#"
   },
@@ -110,7 +110,8 @@ export const projects = [
   // },
   {
     id: 13,
-    title: "Robot Suiveur de Ligne & Combat (1st Place - ENSET)",
+    // title: "Robot Suiveur de Ligne & Combat (1st Place - ENSET)",
+    title: "1st Place - ENSET",
     category: "Compétitions & Hackathons",
     role: "ENSET Mohammedia",
     date: "May 2025",
@@ -144,7 +145,8 @@ export const projects = [
   
 {
   id: 14,
-  title: "Robot Suiveur de Ligne Intelligent (1st Place Hackathon EHTP)",
+  // title: "Robot Suiveur de Ligne Intelligent (1st Place Hackathon EHTP)",
+  title: "1st Place Hackathon EHTP",
   category: "Compétitions & Hackathons",
   role: "EHTP Casablanca",
   date: "Juin 2025",
@@ -156,11 +158,7 @@ export const projects = [
     "/Competitions/EHTP 4.png",
   ],
   tags: [
-    "Arduino",
-    "Robotique",
-    "Capteurs Ultrasoniques", 
-    "Navigation Autonome",
-    "Hackathon"
+    "Arduino", "Capteurs","C++", "Robotique", "Hackathon"
   ],
   details: "Hackathon d'une journée nécessitant un travail continu jusqu'à tard dans la nuit. Le défi consistait à concevoir un robot autonome capable de se déplacer sur une carte tracée, suivre un itinéraire précis, détecter et éviter automatiquement des obstacles à l'aide de capteurs ultrasoniques. Le robot devait identifier les objets rencontrés et transmettre leurs positions (coordonnées / localisation) vers une application dédiée. Une logique de navigation intelligente et un algorithme d'évitement fluide ont été implémentés afin d'assurer précision, fiabilité et rapidité d'exécution, menant à l'obtention de la première place.",
   link: "#"
@@ -168,7 +166,7 @@ export const projects = [
 
   {
     id: 9,
-    title: "Robot Télécommandé (3e Place ENIM)",
+    title: "3e Place ENIM",
     category: "Compétitions & Hackathons",
     role: "Concepteur",
     date: "2023",
@@ -189,48 +187,53 @@ export const projects = [
     id: 10,
     title: "Analyse des Ventes Adidas",
     category: "Projets Académiques",
-    role: "Data Analyst",
+    role: "CMC Rabat",
     date: "Mars 2025",
     description: "Création d'un tableau de bord interactif Power BI pour analyser les ventes Adidas aux États-Unis.",
     images: [
-      "https://cdn.dribbble.com/userupload/16087289/file/original-90ebfdb35d7fee7098ef34f683d81742.png?resize=752x&vertical=center",
-      "/photos-for.png",
-      "/ME.png"
+      "/Adidas/Adidas.png",
+      "/Adidas/Adidas 1.png",
+      "/Adidas/Adidas 2.png",
+      "/Adidas/Adidas 3.png",
+      "/Adidas/Adidas 4.png",
     ],
-    tags: ["Power BI", "DAX", "SQL", "Analysis"],
+    tags: ["Power BI", "DAX","Python", "SQL", "Analysis", "Data Visualization"],
     details: "KPIs clés : Total des ventes, bénéfices, marge bénéficiaire. Visualisations : Carte géographique, treemap, graphiques dynamiques. Optimisation des décisions grâce à l'analyse des produits et des régions.",
-    link: "#"
+    link: ""
   },
   {
-    id: 11,
+    id: 17,
+    title: "RideAlong - Chef de projet",
+    category: "Projets Académiques",
+    role: "CMC Rabat",
+    date: "2024",
+    description: "Projet académique réalisé dans le cadre d'un module de formation, visant la conception d'un prototype de plateforme de covoiturage pour répondre aux problèmes de transport quotidien.",
+    images: [
+      "/Rride Along/Rride Along 1.png",
+      "/Rride Along/Rride Along 2.png",
+      "/Rride Along/Rride Along 3.png",
+      "/Rride Along/Rride Along 4.png",
+      "/Rride Along/Rride Along 5.png",
+      "/Rride Along/Rride Along 6.png",
+      "/Rride Along/Rride Along 7.png",
+      "/Rride Along/Rride Along 8.png"
+    ],
+    tags: ["Prototype","web site", "App design", "UX/UI", "Startup Project", "Transport Intelligent"],
+    details: "Le projet RideAlong a été développé dans un cadre académique et s'est limité à la réalisation d'un prototype fonctionnel. Le travail a commencé par l'identification du problème du transport quotidien, validée par une enquête en ligne montrant que 98 % des participants étaient concernés. Une étude des solutions existantes a ensuite été menée afin de concevoir une plateforme adaptée. Le projet a inclus la définition des fonctionnalités clés, la conception UX/UI du site web et de l'application mobile, ainsi que l'élaboration d'un modèle économique théorique basé sur les commissions et les partenariats. Le projet s'est arrêté à l'étape de prototypage sans déploiement en production.",
+    link: "/Rride Along/PIE_V3.pdf"
+  },
+  {
+    id: 13,
     title: "Gestion Base de Données CMC",
     category: "Projets Académiques",
-    role: "Data Analyst",
-    date: "Février 2024",
-    description: "Conception et gestion de la base de données du CMC (Centre Métiers et Compétences).",
+    role: "CMC Rabat",
+    date: "2024",
+    description: "Conception et gestion de la base de données du CMC (cité des Métiers et Compétences).",
     images: [
-      "https://cdn.dribbble.com/userupload/24610389/file/original-02a2558166a262dee58063844864ffaf.png?resize=752x&vertical=center",
-      "/photos-for.png",
-      "/ME.png"
+      "/cmc.png",
     ],
-    tags: ["MySQL", "SQL Workbench", "Database Design"],
+    tags: ["MySQL", "SQL Workbench", "Database Design", "Data Analysis", "Data Management"],
     details: "Développement de requêtes SQL (CRUD). Définition des structures de tables, attributs et types de données pour un stockage optimisé.",
-    link: "#"
-  },
-  {
-    id: 12,
-    title: "Analyse des Ventes Adidas",
-    category: "Projets Académiques",
-    role: "Data Analyst",
-    date: "Mars 2025",
-    description: "Création d'un tableau de bord interactif Power BI pour analyser les ventes Adidas aux États-Unis.",
-    images: [
-      "https://cdn.dribbble.com/userupload/4148708/file/original-73c4feb50c20b41ee7dea951b39cb601.webp?resize=752x&vertical=center",
-      "/photos-for.png",
-      "/ME.png"
-    ],
-    tags: ["Power BI", "DAX", "SQL", "Analysis"],
-    details: "KPIs clés : Total des ventes, bénéfices, marge bénéficiaire. Visualisations : Carte géographique, treemap, graphiques dynamiques. Optimisation des décisions grâce à l'analyse des produits et des régions.",
     link: "#"
   },
 ];
