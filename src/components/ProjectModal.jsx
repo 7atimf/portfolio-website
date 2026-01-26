@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { FaCalendarAlt, FaMapMarkerAlt, FaRocket } from 'react-icons/fa';
 
 const ProjectModal = ({ project, onClose }) => {
     if (!project) return null;
@@ -183,7 +184,9 @@ const ProjectModal = ({ project, onClose }) => {
                 </div>
 
                 <div style={{ padding: '2.5rem' }}>
-                    <h2 style={{ fontSize: '2.5rem', marginBottom: '0.3rem' }}>{project.title}</h2>
+                    <h2 style={{ fontSize: '2.5rem', marginBottom: '0.3rem' }}>
+                        {project.title}
+                    </h2>
                     <div style={{
                         color: 'var(--accent-color)',
                         fontSize: '1.1rem',
@@ -193,9 +196,15 @@ const ProjectModal = ({ project, onClose }) => {
                         alignItems: 'center',
                         gap: '1rem'
                     }}>
-                        <span>{project.role}</span>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                            <FaMapMarkerAlt />
+                            <span>{project.role}</span>
+                        </div>
                         <span style={{ width: '4px', height: '4px', background: 'rgba(255,255,255,0.3)', borderRadius: '50%' }}></span>
-                        <span style={{ color: 'var(--text-secondary)', fontWeight: '400' }}>{project.date}</span>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', fontWeight: '400' }}>
+                            <FaCalendarAlt />
+                            <span>{project.date}</span>
+                        </div>
                     </div>
 
                     <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '2rem', flexWrap: 'wrap' }}>
