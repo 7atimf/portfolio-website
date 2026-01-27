@@ -154,42 +154,40 @@ const ProjectModal = ({ project, onClose }) => {
                             >
                                 →
                             </button>
-                            <div style={{
-                                position: 'absolute',
-                                bottom: '1.5rem',
-                                left: '50%',
-                                transform: 'translateX(-50%)',
-                                display: 'flex',
-                                gap: '0.6rem',
-                                background: 'rgba(56, 56, 56, 0.3)',
-                                padding: '0.5rem 1rem',
-                                borderRadius: '20px',
-                                backdropFilter: 'blur(4px)'
-                            }}>
-                                {project.images.map((_, idx) => (
-                                    <div
-                                        key={idx}
-                                        style={{
-                                            width: idx === currentImageIndex ? '24px' : '8px',
-                                            height: '8px',
-                                            borderRadius: '4px',
-                                            background: idx === currentImageIndex ? 'var(--accent-color)' : 'rgba(255,255,255,0.3)',
-                                            boxShadow: idx === currentImageIndex ? '0 0 10px var(--accent-glow)' : 'none',
-                                            cursor: 'pointer',
-                                            transition: 'all 0.3s ease'
-                                        }}
-                                        onClick={(e) => {
-                                            e.stopPropagation();
-                                            setCurrentImageIndex(idx);
-                                        }}
-                                    />
-                                ))}
-                            </div>
                         </>
                     )}
                 </div>
 
-                <div style={{ padding: '2.5rem' }}>
+                {project.images.length > 1 && (
+                    <div style={{
+                        display: 'flex',
+                        justifyContent: 'center',
+                        gap: '0.6rem',
+                        padding: '0.8rem 0',
+                        background: 'transparent'
+                    }}>
+                        {project.images.map((_, idx) => (
+                            <div
+                                key={idx}
+                                style={{
+                                    width: idx === currentImageIndex ? '24px' : '8px',
+                                    height: '8px',
+                                    borderRadius: '4px',
+                                    background: idx === currentImageIndex ? 'var(--accent-color)' : 'rgba(255,255,255,0.3)',
+                                    boxShadow: idx === currentImageIndex ? '0 0 10px var(--accent-glow)' : 'none',
+                                    cursor: 'pointer',
+                                    transition: 'all 0.3s ease'
+                                }}
+                                onClick={(e) => {
+                                    e.stopPropagation();
+                                    setCurrentImageIndex(idx);
+                                }}
+                            />
+                        ))}
+                    </div>
+                )}
+
+                <div style={{ padding: '0.5rem 2.5rem 2.5rem' }}>
                     <h2 style={{ fontSize: '2.5rem', marginBottom: '0.3rem' }}>
                         {project.title}
                     </h2>

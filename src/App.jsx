@@ -71,7 +71,7 @@ function App() {
           marginTop: '4rem',
           borderTop: '1px solid rgba(255,255,255,0.05)'
         }}>
-          <p>&copy; {new Date().getFullYear()} {personalInfo.name}. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} {"Fadoul Hatim"}.</p>
         </footer>
 
         {selectedProject && (
