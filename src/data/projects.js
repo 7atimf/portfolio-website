@@ -129,19 +129,19 @@ export const projects = [
 
   {
     id: 9,
-    title: "3e Place ENIM",
+    title: "3e Place Hackathon ENIM",
     category: "Compétitions & Hackathons",
-    role: "Concepteur",
-    date: "2023",
-    description: "Conception d'un robot suiveur de ligne et télécommandé. Pilotage réussi sur un parcours complexe et technique en deux phases.",
+    role: "ENIM Rabat",
+    date: "May 2024",
+    description: "Conception et développement d'un robot capable de fonctionner en mode autonome et télécommandé, testé sur un parcours complexe et technique lors d'un hackathon.",
     images: [
-      "https://images.unsplash.com/photo-1555255707-c07966088b7b?q=80&w=2532&auto=format&fit=crop",
-      "/photos-for.png",
-      "/ME.png"
+      "/enim 1.jpg",
+      "/enim 2.jpg",
+      "/ENIM.png",
     ],
-    tags: ["Robotique", "Télécommande", "Hardware"],
-    details: "3ème place au Hackathon ENIM Rabat.",
-    link: "#"
+    tags: ["Robotique","Arduino","Télécommande", "Capteurs","C++", "Hackathon", "Hardware"],
+    details: "Le projet s'est déroulé en deux phases distinctes. La première phase consistait en un robot suiveur de ligne autonome capable de naviguer avec précision sur un parcours complexe. La seconde phase reposait sur le pilotage manuel du robot à distance, nécessitant réactivité et maîtrise du contrôle. L'optimisation du code et de la logique de navigation a permis d'atteindre une performance compétitive, menant à l'obtention de la troisième place au Hackathon ENIM Rabat.",
+    link: "https://www.instagram.com/p/C62AmjnLckb/"
   },
 
 
