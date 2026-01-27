@@ -156,21 +156,27 @@ const ProjectModal = ({ project, onClose }) => {
                             </button>
                             <div style={{
                                 position: 'absolute',
-                                bottom: '1rem',
+                                bottom: '1.5rem',
                                 left: '50%',
                                 transform: 'translateX(-50%)',
                                 display: 'flex',
-                                gap: '0.5rem'
+                                gap: '0.6rem',
+                                background: 'rgba(56, 56, 56, 0.3)',
+                                padding: '0.5rem 1rem',
+                                borderRadius: '20px',
+                                backdropFilter: 'blur(4px)'
                             }}>
                                 {project.images.map((_, idx) => (
                                     <div
                                         key={idx}
                                         style={{
-                                            width: '8px',
+                                            width: idx === currentImageIndex ? '24px' : '8px',
                                             height: '8px',
-                                            borderRadius: '50%',
-                                            background: idx === currentImageIndex ? 'white' : 'rgba(255,255,255,0.5)',
-                                            cursor: 'pointer'
+                                            borderRadius: '4px',
+                                            background: idx === currentImageIndex ? 'var(--accent-color)' : 'rgba(255,255,255,0.3)',
+                                            boxShadow: idx === currentImageIndex ? '0 0 10px var(--accent-glow)' : 'none',
+                                            cursor: 'pointer',
+                                            transition: 'all 0.3s ease'
                                         }}
                                         onClick={(e) => {
                                             e.stopPropagation();

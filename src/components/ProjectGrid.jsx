@@ -1,6 +1,7 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
 import { projects } from '../data/projects';
+import ScrollReveal from './ScrollReveal';
 
 const ProjectGrid = ({ onProjectClick }) => {
     // Group projects by category
@@ -28,12 +29,13 @@ const ProjectGrid = ({ onProjectClick }) => {
                         gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
                         gap: '2rem'
                     }}>
-                        {categoryProjects.map(project => (
-                            <ProjectCard
-                                key={project.id}
-                                project={project}
-                                onClick={onProjectClick}
-                            />
+                        {categoryProjects.map((project, idx) => (
+                            <ScrollReveal key={project.id} delay={idx * 100}>
+                                <ProjectCard
+                                    project={project}
+                                    onClick={onProjectClick}
+                                />
+                            </ScrollReveal>
                         ))}
                     </div>
                 </div>
