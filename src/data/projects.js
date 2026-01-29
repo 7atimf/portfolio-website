@@ -246,7 +246,6 @@ export const personalInfo = {
     github: "https://github.com/7atimf",
     linkedin: "https://www.linkedin.com/in/hatimfadoul/", 
     instagram: "https://www.instagram.com/hatim.fadoul/" ,
-    snap: "https://www.7olm.ma"
   },
   skills: [
     "Python (Pandas, NumPy, Scikit-learn)",
