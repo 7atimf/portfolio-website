@@ -205,7 +205,7 @@ export const personalInfo = {
   name: "FADOUL Hatim",
   role: "Intelligence Artificielle (IA) & Data Analysis | Power BI • Python • SQL",
   profileImage: "/photos-for.png", 
-  bio: "Data Analyst & AI enthusiast, specialized in data analysis, Power BI dashboards, and database management. Hands-on experience in IoT data analytics, robotics competitions, and real-world AI projects. Curious, proactive, and driven to turn complex data into clear, actionable insights.",
+  bio: "Data Analyst & passionné d'IA, spécialisé en analyse de données, tableaux de bord Power BI et gestion de bases de données. Expérience pratique en analyse de données IoT, compétitions de robotique et projets d'IA appliqués au monde réel. Curieux, proactif et motivé à transformer des données complexes en insights clairs et exploitables.",
   experiences: [
     {
       role: "Stagiaire Data Analyst",
