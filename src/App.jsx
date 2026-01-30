@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Contact from './pages/Contact';
 import ProjectModal from './components/ProjectModal';
 import { personalInfo } from './data/projects';
+import { LanguageProvider } from './context/LanguageContext';
 
 // Nav component to handle active states if needed
 const Navbar = () => {
@@ -53,9 +54,10 @@ function App() {
   const [selectedProject, setSelectedProject] = useState(null);
 
   return (
-    <Router>
-      <div className="App" style={{ minHeight: '100vh' }}>
-        <Navbar />
+    <LanguageProvider>
+      <Router>
+        <div className="App" style={{ minHeight: '100vh' }}>
+          <Navbar />
 
         <main>
           <Routes>
@@ -82,6 +84,7 @@ function App() {
         )}
       </div>
     </Router>
+    </LanguageProvider>
   );
 }
 

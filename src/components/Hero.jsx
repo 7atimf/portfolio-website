@@ -2,8 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { personalInfo } from '../data/projects';
 import { FaGithub, FaLinkedin, FaEnvelope, FaInstagram, FaDownload } from 'react-icons/fa';
+import { translations } from '../data/languages';
+import { useLanguage } from '../context/LanguageContext';
 
 const Hero = () => {
+    const { language, setLanguage } = useLanguage();
+    const t = translations[language];
+
     const handleDownloadCV = () => {
         const link = document.createElement('a');
         link.href = '/cv FADOUL Hatim.pdf';
@@ -22,8 +27,42 @@ const Hero = () => {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            animation: 'fadeIn 0.8s ease-out'
+            animation: 'fadeIn 0.8s ease-out',
+            position: 'relative'
         }}>
+            {/* Language Toggle */}
+            <div style={{
+                position: 'absolute',
+                top: '2rem',
+                right: '2rem',
+                display: 'flex',
+                gap: '0.5rem'
+            }}>
+                <button
+                    onClick={() => setLanguage('en')}
+                    style={{
+                        ...languageButtonStyle,
+                        background: language === 'en' ? 'var(--accent-color)' : 'rgba(255,255,255,0.1)',
+                        color: language === 'en' ? '#000' : 'var(--text-primary)',
+                        border: language === 'en' ? 'none' : '1px solid rgba(255,255,255,0.2)'
+                    }}
+                    title="English"
+                >
+                    🇬🇧 EN
+                </button>
+                <button
+                    onClick={() => setLanguage('fr')}
+                    style={{
+                        ...languageButtonStyle,
+                        background: language === 'fr' ? 'var(--accent-color)' : 'rgba(255,255,255,0.1)',
+                        color: language === 'fr' ? '#000' : 'var(--text-primary)',
+                        border: language === 'fr' ? 'none' : '1px solid rgba(255,255,255,0.2)'
+                    }}
+                    title="Français"
+                >
+                    🇫🇷 FR
+                </button>
+            </div>
             <div style={{
                 display: 'flex',
                 flexDirection: 'row',
@@ -53,7 +92,7 @@ const Hero = () => {
                         marginBottom: '1.5rem',
                         fontWeight: '600'
                     }}>
-                        {personalInfo.role}
+                        {t.role}
                     </h2>
                     <p style={{
                         fontSize: '1.05rem',
@@ -62,7 +101,7 @@ const Hero = () => {
                         lineHeight: '1.8',
                         maxWidth: '600px'
                     }}>
-                        {personalInfo.bio}
+                        {t.bio}
                     </p>
 
                     <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', marginBottom: '2.5rem' }}>
@@ -160,6 +199,17 @@ const downloadButtonStyle = {
     display: 'inline-flex',
     alignItems: 'center',
     gap: '0.8rem'
+};
+
+const languageButtonStyle = {
+    padding: '0.6rem 1rem',
+    fontSize: '0.9rem',
+    fontWeight: '600',
+    borderRadius: '6px',
+    cursor: 'pointer',
+    transition: 'all 0.3s ease',
+    border: '1px solid rgba(255,255,255,0.2)',
+    textDecoration: 'none'
 };
 
 // Add hover effect via cleaner logical CSS in real project, but using style object for now requires JS

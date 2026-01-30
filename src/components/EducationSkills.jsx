@@ -1,7 +1,12 @@
 import React from 'react';
 import { personalInfo } from '../data/projects';
+import { useLanguage } from '../context/LanguageContext';
+import { translations } from '../data/languages';
 
 const EducationSkills = () => {
+    const { language } = useLanguage();
+    const t = translations[language];
+    
     return (
         <div style={{ maxWidth: '1170px', width: '100%', margin: '1rem auto', padding: '0 1rem' }}>
 
@@ -10,12 +15,12 @@ const EducationSkills = () => {
                 {/* Education Section */}
                 <div style={columnStyle}>
                     <h3 style={headerStyle}>
-                        Education
+                        {t.education}
                     </h3>
                     <div style={headerunderlineStyle}></div>
 
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
-                        {personalInfo.education.map((edu, idx) => (
+                        {t.education_list.map((edu, idx) => (
                             <div key={idx}>
                                 <div style={{ fontWeight: 'bold', fontSize: '1.2rem', color: '#fff', marginBottom: '0.2rem' }}>
                                     {edu.degree}

@@ -1,10 +1,22 @@
 import React, { useEffect, useState } from 'react';
 import { FaCalendarAlt, FaMapMarkerAlt, FaRocket } from 'react-icons/fa';
+import { translations } from '../data/languages';
+import { useLanguage } from '../context/LanguageContext';
 
 const ProjectModal = ({ project, onClose }) => {
+    const { language } = useLanguage();
+    const t = translations[language];
+    const projectTranslation = t.projects_list?.[project.id] || {};
+    
     if (!project) return null;
 
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    
+    // Use translation if available, fallback to original project data
+    const displayTitle = projectTranslation.title || project.title;
+    const displayCategory = projectTranslation.category || project.category;
+    const displayDetails = projectTranslation.details || project.details;
+    const displayDate = t.dates?.[project.date] || project.date;
 
     // Reset image index when project changes
     useEffect(() => {
@@ -88,7 +100,7 @@ const ProjectModal = ({ project, onClose }) => {
                 <div style={{ position: 'relative', width: '100%', height: '500px', background: '#000', borderRadius: '8px', overflow: 'hidden' }}>
                     <img
                         src={project.images[currentImageIndex]}
-                        alt={`${project.title} ${currentImageIndex + 1}`}
+                        alt={`${displayTitle} ${currentImageIndex + 1}`}
                         style={{
                             width: '100%',
                             height: '100%',
@@ -189,7 +201,7 @@ const ProjectModal = ({ project, onClose }) => {
 
                 <div style={{ padding: '0.5rem 2.5rem 2.5rem' }}>
                     <h2 style={{ fontSize: '2.5rem', marginBottom: '0.3rem' }}>
-                        {project.title}
+                        {displayTitle}
                     </h2>
                     <div style={{
                         color: 'var(--accent-color)',
@@ -207,7 +219,7 @@ const ProjectModal = ({ project, onClose }) => {
                         <span style={{ width: '4px', height: '4px', background: 'rgba(255,255,255,0.3)', borderRadius: '50%' }}></span>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', fontWeight: '400' }}>
                             <FaCalendarAlt />
-                            <span>{project.date}</span>
+                            <span>{displayDate}</span>
                         </div>
                     </div>
 
@@ -226,9 +238,9 @@ const ProjectModal = ({ project, onClose }) => {
                     </div>
 
                     <div style={{ color: 'var(--text-secondary)', lineHeight: '1.8', fontSize: '1.1rem', marginBottom: '2rem' }}>
-                        <p>{project.description}</p>
+                        <p>{projectTranslation.description || project.description}</p>
                         <br />
-                        <p>{project.details}</p>
+                        <p>{displayDetails}</p>
                     </div>
 
                     <a

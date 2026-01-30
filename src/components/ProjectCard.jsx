@@ -1,7 +1,16 @@
 import React from 'react';
 import { FaCalendarAlt, FaMapMarkerAlt, FaRocket } from 'react-icons/fa';
+import { translations } from '../data/languages';
 
-const ProjectCard = ({ project, onClick }) => {
+const ProjectCard = ({ project, onClick, language = 'en' }) => {
+    const t = translations[language];
+    const projectTranslation = t.projects_list?.[project.id] || {};
+    
+    // Use translation if available, fallback to original project data
+    const displayTitle = projectTranslation.title || project.title;
+    const displayDescription = projectTranslation.description || project.description;
+    const displayDate = t.dates?.[project.date] || project.date;
+    
     return (
         <div
             className="project-card"
@@ -27,13 +36,13 @@ const ProjectCard = ({ project, onClick }) => {
             <div style={{ height: '200px', overflow: 'hidden' }}>
                 <img
                     src={project.images[0]}
-                    alt={project.title}
+                    alt={displayTitle}
                     style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                 />
             </div>
             <div style={{ padding: '1.5rem' }}>
                 <h3 style={{ marginBottom: '0.2rem', fontSize: '1.25rem' }}>
-                    {project.title}
+                    {displayTitle}
                 </h3>
                 <div style={{
                     color: 'var(--accent-color)',
@@ -58,10 +67,10 @@ const ProjectCard = ({ project, onClick }) => {
                     gap: '0.5rem'
                 }}>
                     <FaCalendarAlt style={{ fontSize: '0.75rem' }} />
-                    {project.date}
+                    {displayDate}
                 </div>
                 <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginBottom: '1rem', display: '-webkit-box', WebkitLineClamp: '2', WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
-                    {project.description}
+                    {displayDescription}
                 </p>
                 <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
                     {project.tags.map(tag => (
