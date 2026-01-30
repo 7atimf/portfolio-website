@@ -251,10 +251,11 @@ const ProjectModal = ({ project, onClose }) => {
                             display: 'inline-block',
                             background: 'var(--accent-color)',
                             color: '#0f172a',
-                            padding: '1rem 2rem',
+                            padding: '0.6rem 1.4rem',
                             borderRadius: '12px',
                             fontWeight: '600',
                             transition: 'transform 0.2s',
+                            fontSize: '0.95rem'
                         }}
                         onMouseOver={e => e.target.style.transform = 'scale(1.05)'}
                         onMouseOut={e => e.target.style.transform = 'scale(1)'}
@@ -268,3 +269,4 @@ const ProjectModal = ({ project, onClose }) => {
 };
 
 export default ProjectModal;
+ 

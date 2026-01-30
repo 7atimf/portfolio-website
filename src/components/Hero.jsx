@@ -30,39 +30,6 @@ const Hero = () => {
             animation: 'fadeIn 0.8s ease-out',
             position: 'relative'
         }}>
-            {/* Language Toggle */}
-            <div style={{
-                position: 'absolute',
-                top: '2rem',
-                right: '2rem',
-                display: 'flex',
-                gap: '0.5rem'
-            }}>
-                <button
-                    onClick={() => setLanguage('en')}
-                    style={{
-                        ...languageButtonStyle,
-                        background: language === 'en' ? 'var(--accent-color)' : 'rgba(255,255,255,0.1)',
-                        color: language === 'en' ? '#000' : 'var(--text-primary)',
-                        border: language === 'en' ? 'none' : '1px solid rgba(255,255,255,0.2)'
-                    }}
-                    title="English"
-                >
-                    🇬🇧 EN
-                </button>
-                <button
-                    onClick={() => setLanguage('fr')}
-                    style={{
-                        ...languageButtonStyle,
-                        background: language === 'fr' ? 'var(--accent-color)' : 'rgba(255,255,255,0.1)',
-                        color: language === 'fr' ? '#000' : 'var(--text-primary)',
-                        border: language === 'fr' ? 'none' : '1px solid rgba(255,255,255,0.2)'
-                    }}
-                    title="Français"
-                >
-                    🇫🇷 FR
-                </button>
-            </div>
             <div style={{
                 display: 'flex',
                 flexDirection: 'row',
