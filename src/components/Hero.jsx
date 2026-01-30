@@ -1,9 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { personalInfo } from '../data/projects';
-import { FaGithub, FaLinkedin, FaEnvelope, FaInstagram } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaInstagram, FaDownload } from 'react-icons/fa';
 
 const Hero = () => {
+    const handleDownloadCV = () => {
+        const link = document.createElement('a');
+        link.href = '/cv FADOUL Hatim.pdf';
+        link.download = 'cv FADOUL Hatim.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
     return (
         <section style={{
             padding: '4rem 2rem',
@@ -56,9 +65,15 @@ const Hero = () => {
                         {personalInfo.bio}
                     </p>
 
-                    <Link to="/contact" style={contactButtonStyle}>
-                        Contact Me
-                    </Link>
+                    <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', marginBottom: '2.5rem' }}>
+                        <Link to="/contact" style={contactButtonStyle}>
+                            Contact Me
+                        </Link>
+
+                        <button onClick={handleDownloadCV} style={downloadButtonStyle}>
+                            <FaDownload /> Download CV
+                        </button>
+                    </div>
 
                     <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center', marginTop: '2rem' }}>
                         <a href={personalInfo.contact.github} style={iconBtnStyle} title="GitHub" target="_blank" rel="noopener noreferrer">
@@ -127,6 +142,24 @@ const contactButtonStyle = {
     transition: 'all 0.3s ease',
     textDecoration: 'none',
     boxShadow: '0 4px 15px var(--accent-glow)'
+};
+
+const downloadButtonStyle = {
+    display: 'inline-block',
+    padding: '0.7rem 2.5rem',
+    fontSize: '1.1rem',
+    fontWeight: '600',
+    color: 'var(--accent-color)',
+    background: 'rgba(255,255,255,0.05)',
+    border: '2px solid var(--accent-color)',
+    borderRadius: '10px',
+    cursor: 'pointer',
+    transition: 'all 0.3s ease',
+    textDecoration: 'none',
+    boxShadow: '0 4px 15px rgba(0,0,0,0.1)',
+    display: 'inline-flex',
+    alignItems: 'center',
+    gap: '0.8rem'
 };
 
 // Add hover effect via cleaner logical CSS in real project, but using style object for now requires JS
