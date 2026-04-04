@@ -242,7 +242,7 @@ export const personalInfo = {
   contact: {
     email: "fadoulhatim@gmail.com",
     phone: "+212 767-313220",
-    location: "Rabat, Maroc",
+    location: "Kenitra, Maroc",
     github: "https://github.com/7atimf",
     linkedin: "https://www.linkedin.com/in/hatimfadoul/", 
     instagram: "https://www.instagram.com/hatim.fadoul/" ,
