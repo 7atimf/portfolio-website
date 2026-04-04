@@ -38,9 +38,9 @@ const Portfolio = ({ onProjectClick }) => {
             {/* Instagram-style 3-column grid */}
             <div style={{
                 display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fill, minmax(400px, 1fr))',
+                gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))',
                 gap: '1rem',
-                gridAutoRows: '300px'
+                gridAutoRows: '450px'
             }}>
                 {allImages.map((item, idx) => (
                     <ScrollReveal key={item.id} delay={idx * 50}>
