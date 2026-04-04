@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
+import Portfolio from './pages/Portfolio';
 import ProjectModal from './components/ProjectModal';
 import { personalInfo } from './data/projects';
 import { LanguageProvider, useLanguage } from './context/LanguageContext';
@@ -39,6 +40,7 @@ const Navbar = () => {
         </Link>
         <div style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
           <Link to="/" style={linkStyle}>Home</Link>
+          <Link to="/portfolio" style={linkStyle}>Portfolio</Link>
           <Link to="/contact" style={linkStyle}>Contact</Link>
           
           {/* Language Dropdown */}
@@ -172,6 +174,7 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<Home onProjectClick={setSelectedProject} />} />
+            <Route path="/portfolio" element={<Portfolio onProjectClick={setSelectedProject} />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
