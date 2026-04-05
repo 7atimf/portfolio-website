@@ -13,7 +13,7 @@ const Portfolio = ({ onProjectClick }) => {
     return (
         <section style={{ maxWidth: '1800px', margin: '0 auto', padding: '2rem 1rem' }}>
             {/* Header */}
-            <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
+            <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
                 <h1 style={{
                     fontSize: '3rem',
                     fontWeight: 'bold',
@@ -26,7 +26,7 @@ const Portfolio = ({ onProjectClick }) => {
                 <p style={{
                     fontSize: '1.1rem',
                     color: 'var(--text-secondary)',
-                    maxWidth: '600px',
+                    maxWidth: '700px',
                     margin: '0 auto'
                 }}>
                     {language === 'en' 
@@ -38,9 +38,9 @@ const Portfolio = ({ onProjectClick }) => {
             {/* Instagram-style 3-column grid */}
             <div style={{
                 display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))',
+                gridTemplateColumns: 'repeat(auto-fill, minmax(500px, 1fr))',
                 gap: '1rem',
-                gridAutoRows: '450px'
+                gridAutoRows: '400px'
             }}>
                 {allImages.map((item, idx) => (
                     <ScrollReveal key={item.id} delay={idx * 50}>
@@ -91,7 +91,7 @@ const Portfolio = ({ onProjectClick }) => {
                                 cursor: 'pointer'
                             }}
                             onMouseEnter={(e) => {
-                                e.currentTarget.style.opacity = '1';
+                                e.currentTarget.style.opacity = '0.7';
                             }}
                             onMouseLeave={(e) => {
                                 e.currentTarget.style.opacity = '0';
@@ -157,10 +157,10 @@ const Portfolio = ({ onProjectClick }) => {
                                 right: '0',
                                 background: 'transparent',
                                 border: 'none',
-                                color: '#fff',
+                                color: '#ffffff',
                                 fontSize: '2rem',
                                 cursor: 'pointer',
-                                transition: 'transform 0.2s ease'
+                                transition: 'transform 0.3s ease'
                             }}
                             onMouseEnter={(e) => {
                                 e.currentTarget.style.transform = 'scale(1.2)';

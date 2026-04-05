@@ -1,6 +1,84 @@
 export const projects = [
   // Internships ------------------------------------------------------
   {
+    id: 12,
+    title: "Designer | Robotics Club CMC",
+    category: "Stages & Expérience",
+    role: "club robotique cmc rabat",
+    date: "2023 - 2026",
+    description: "Contribution active au sein du Club Robotique CMC, en tant que Designer Visuel, avec pour mission de forger une identité visuelle innovante et technologique pour les compétitions nationales et internationales.",
+    images: [
+      "cmc webp/cmc 1.webp",
+      "cmc webp/cmc 2.webp",
+      "cmc webp/cmc 3.webp",
+      "cmc webp/cmc 4.webp",
+      "cmc webp/cmc 5.webp",
+      "cmc webp/cmc 6.webp",
+      "cmc webp/cmc 7.webp",
+    ],
+    tags: ["Figma", "Photoshop", "Illustrator","Canva", "Branding", "Design Graphique"],
+    details: "Conception et réalisation d'une charte graphique complète incluant le branding de l'équipe, les supports de communication digitaux et l'interface utilisateur (UI) de solutions de contrôle robotique. Le projet a englobé la création de logos, de visuels pour les réseaux sociaux et de prototypes d'interfaces pour le suivi des performances des robots en temps réel. Le résultat est une image de marque forte et cohérente, alliant esthétique moderne et précision technique, renforçant la présence du club dans l'écosystème de l'automatisation.",
+    link: "https://www.instagram.com/club_robotique_cmc_rabat/"
+  },
+  {
+    id: 11,
+    title: "Visual Content Creation",
+    category: "Stages & Expérience",
+    role: "freelance",
+    date: "2023 - 2025",
+    description: "Mission de Branding et Design Multimédia effectuée en freelance. Le projet consistait à créer un univers visuel cohérent pour booster l'engagement client.",
+    images: [
+      "/design webp/design 1.webp",
+      "/design webp/design 2.webp",
+      "/design webp/design 3.webp",
+      "/design webp/design 4.webp",
+      "/design webp/design 5.webp",
+      "/design webp/design 6.webp",
+
+    ],
+    tags: ["Figma", "Photoshop", "Illustrator","Canva", "Branding", "Design Graphique"],
+    details: "Développement de concepts créatifs pour divers supports de communication (Print & Digital). Création de visuels haute résolution, gestion de l'identité de marque et montage de contenus vidéo promotionnels. Grâce à une approche centrée sur l'utilisateur et les tendances actuelles du design, le résultat final a considérablement amélioré la visibilité de la marque et la qualité professionnelle de sa communication.",
+    link: ""
+  },
+  {
+    id: 5,
+    title: "Creative & Media Team Lead",
+    category: "Stages & Expérience",
+    role: "Club Robotique CMC Rabat",
+    date: "2023 - 2025",
+    description: "Responsable de l'équipe créative et média du Robotics Club, en charge de l'identité visuelle, du montage vidéo et de la gestion des comptes de communication du club.",
+    images: [
+      "/media/MD4.webp",
+      "/media/MD3.webp",
+      "/media/MD2.webp",
+      "/media/MD1.webp",
+
+    ],
+    tags: ["Design Graphique", "Montage Vidéo", "Social Media", "Leadership", "Branding"],
+    details: "Encadrement et coordination de l'équipe de design et de montage. Création de supports visuels (affiches, visuels réseaux sociaux, présentations), montage de vidéos promotionnelles et couverture média des événements et compétitions. Gestion et animation des comptes du club sur les réseaux sociaux, planification des publications et amélioration de la visibilité et de l'image du club.",
+    link: "https://www.instagram.com/club_robotique_cmc_rabat/"
+  },
+    {
+    id: 4,
+    title: "Robotics Club Trainer",
+    category: "Stages & Expérience",
+    role: "Club Robotique CMC Rabat",
+    date: "2024 - 2025",
+    description: "Membre actif du Robotics Club de CMC Rabat, j'ai évolué vers le rôle de formateur après deux années d'apprentissage et de participation à plusieurs compétitions robotiques. J'ai contribué au développement des compétences techniques des membres à travers des formations pratiques et théoriques.",
+    images: [
+      "/Trainer/trainer-1.webp",
+      "/Trainer/trainer-2.webp",
+      "/Trainer/trainer-3.webp",
+      "/Trainer/trainer-4.webp",
+      "/Trainer/trainer-5.webp",
+      "/Trainer/trainer-6.webp",
+      "/Trainer/trainer-7.webp",
+    ],
+    tags: ["Robotics", "Arduino", "Formation", "C", "Compétitions", "Team Leadership"],
+    details: "Participation à plusieurs compétitions robotiques en tant que membre du club. Après deux années d'expérience, prise de responsabilité en tant que Trainer : animation de formations en robotique (Arduino, capteurs, actionneurs), accompagnement des nouveaux membres, conception de projets pratiques et encadrement des équipes lors des compétitions. Contribution à la gestion du club, au design visuel et à l'organisation des activités pédagogiques.",
+    link: "https://www.instagram.com/p/DESyNtxMVjT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+  },
+  {
     id: 1,
     title: "Data Analyst Intern",
     category: "Stages & Expérience",
@@ -53,44 +131,6 @@ export const projects = [
     link: "#"
   },
   {
-    id: 4,
-    title: "Robotics Club Trainer",
-    category: "Stages & Expérience",
-    role: "Club Robotique CMC Rabat",
-    date: "2024 - 2025",
-    description: "Membre actif du Robotics Club de CMC Rabat, j'ai évolué vers le rôle de formateur après deux années d'apprentissage et de participation à plusieurs compétitions robotiques. J'ai contribué au développement des compétences techniques des membres à travers des formations pratiques et théoriques.",
-    images: [
-      "/Trainer/trainer-1.webp",
-      "/Trainer/trainer-2.webp",
-      "/Trainer/trainer-3.webp",
-      "/Trainer/trainer-4.webp",
-      "/Trainer/trainer-5.webp",
-      "/Trainer/trainer-6.webp",
-      "/Trainer/trainer-7.webp",
-    ],
-    tags: ["Robotics", "Arduino", "Formation", "C", "Compétitions", "Team Leadership"],
-    details: "Participation à plusieurs compétitions robotiques en tant que membre du club. Après deux années d'expérience, prise de responsabilité en tant que Trainer : animation de formations en robotique (Arduino, capteurs, actionneurs), accompagnement des nouveaux membres, conception de projets pratiques et encadrement des équipes lors des compétitions. Contribution à la gestion du club, au design visuel et à l'organisation des activités pédagogiques.",
-    link: "https://www.instagram.com/p/DESyNtxMVjT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
-  },
-  {
-    id: 5,
-    title: "Creative & Media Team Lead",
-    category: "Stages & Expérience",
-    role: "Club Robotique CMC Rabat",
-    date: "2023 - 2025",
-    description: "Responsable de l'équipe créative et média du Robotics Club, en charge de l'identité visuelle, du montage vidéo et de la gestion des comptes de communication du club.",
-    images: [
-      "/media/MD4.webp",
-      "/media/MD3.webp",
-      "/media/MD2.webp",
-      "/media/MD1.webp",
-
-    ],
-    tags: ["Design Graphique", "Montage Vidéo", "Social Media", "Leadership", "Branding"],
-    details: "Encadrement et coordination de l'équipe de design et de montage. Création de supports visuels (affiches, visuels réseaux sociaux, présentations), montage de vidéos promotionnelles et couverture média des événements et compétitions. Gestion et animation des comptes du club sur les réseaux sociaux, planification des publications et amélioration de la visibilité et de l'image du club.",
-    link: "https://www.instagram.com/club_robotique_cmc_rabat/"
-  },
-  {
     id: 13,
     title: "1st Place - ENSET",
     category: "Compétitions & Hackathons",
@@ -126,7 +166,6 @@ export const projects = [
   details: "Hackathon d'une journée nécessitant un travail continu jusqu'à tard dans la nuit. Le défi consistait à concevoir un robot autonome capable de se déplacer sur une carte tracée, suivre un itinéraire précis, détecter et éviter automatiquement des obstacles à l'aide de capteurs ultrasoniques. Le robot devait identifier les objets rencontrés et transmettre leurs positions (coordonnées / localisation) vers une application dédiée. Une logique de navigation intelligente et un algorithme d'évitement fluide ont été implémentés afin d'assurer précision, fiabilité et rapidité d'exécution, menant à l'obtention de la première place.",
   link: "#"
 },
-
   {
     id: 9,
     title: "3e Place Hackathon ENIM",
@@ -143,7 +182,6 @@ export const projects = [
     details: "Le projet s'est déroulé en deux phases distinctes. La première phase consistait en un robot suiveur de ligne autonome capable de naviguer avec précision sur un parcours complexe. La seconde phase reposait sur le pilotage manuel du robot à distance, nécessitant réactivité et maîtrise du contrôle. L'optimisation du code et de la logique de navigation a permis d'atteindre une performance compétitive, menant à l'obtention de la troisième place au Hackathon ENIM Rabat.",
     link: "https://www.instagram.com/p/C62AmjnLckb/"
   },
-
 
   // Academic -----------------------------------------------------------------------------------------------
   {

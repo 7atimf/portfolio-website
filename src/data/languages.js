@@ -46,6 +46,7 @@ export const translations = {
       "2021 - 2022": "2021 - 2022"
     },
     projects_list: {
+      
       1: {
         title: "Stagiaire Data Analyst",
         category: "Stages & Expérience",

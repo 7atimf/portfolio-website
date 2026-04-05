@@ -70,7 +70,6 @@ const Navbar = () => {
             }
           }}>
             <Link to="/" style={linkStyle}>Home</Link>
-            <Link to="/portfolio" style={linkStyle}>Portfolio</Link>
             <Link to="/contact" style={linkStyle}>Contact</Link>
             
             {/* Desktop Language Dropdown */}
@@ -278,13 +277,6 @@ const Navbar = () => {
             onClick={closeMobileMenu}
           >
             Home
-          </Link>
-          <Link 
-            to="/portfolio" 
-            style={mobileLinkStyle}
-            onClick={closeMobileMenu}
-          >
-            Portfolio
           </Link>
           <Link 
             to="/contact" 
