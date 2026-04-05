@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
-import Portfolio from './pages/portfolio';
+import Portfolio from './pages/Portfolio';
 import ProjectModal from './components/ProjectModal';
 import { personalInfo } from './data/projects';
 import { LanguageProvider, useLanguage } from './context/LanguageContext';
