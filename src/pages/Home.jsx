@@ -13,13 +13,12 @@ const Home = ({ onProjectClick }) => {
     };
 
     return (
-        <div>
+        <div style={{ display: 'block', visibility: 'visible' }}>
             <Hero />
             <div style={dividerStyle}></div>
             <ProjectGrid onProjectClick={onProjectClick} />
-            {/* <div style={dividerStyle}></div>
-            <AboutMe /> */}
             <div style={dividerStyle}></div>
+            {/* Education, Skills, Languages - Always Visible */}
             <EducationSkills />
         </div>
     );
